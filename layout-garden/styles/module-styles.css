@@ -1,0 +1,112 @@
+/* Space Grotesk: sans-serif neo-grotesque */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+
+
+/* Pixartprinting Footer | Layout 1 - 10/7/26 */
+.pixartprinting-footer {
+	/* only immediate children of any type. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator */
+	padding: 20px;
+	font-family: "Space Grotesk", sans-serif;
+	container-type: inline-size;
+
+	/*text*/
+	.attention-voice {
+		font-weight: 700;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: silver;
+		}
+	}
+
+	> * {
+		padding: 34px 0;
+		border-bottom: 1px solid silver;
+	}
+
+	.services {
+		display: grid;
+		grid-gap: 16px;
+	}
+
+	.contact {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 34px;
+
+		p + p {
+			margin-top: 16px;
+		}
+
+		.email {
+			margin-top: 34px;
+		}
+
+		.socials {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			
+			.socials-name {
+				display: none;
+			}
+
+			.socials-icon {
+				display: block;
+				width: 20px;
+				height: 20px;
+				path {
+					fill: #000;
+				}
+			}
+
+			a:hover svg path {
+				fill: silver;
+			}
+		}
+	}
+
+	.legal {
+		display: flex;
+		flex-direction: column;
+		gap: 34px;
+		text-align: center;
+	}
+
+	/* heyyy container queries	 */
+	@container (min-width: 740px) {
+		.services {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	@container (min-width: 1100px) {
+		.contact {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: start;
+
+			.socials {
+				flex-direction: column;
+				justify-content: space-between;
+				
+				.socials-name {
+					display: block;
+				}
+				.socials-icon {
+					display: none;
+				}
+			}
+		}
+		.legal {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+	}
+}
