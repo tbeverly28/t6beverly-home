@@ -110,3 +110,138 @@
 		}
 	}
 }
+
+/* Coolors Palette Generator | Layout 2 - 10/8/26 (additional features possible) */
+.coolors-palette-gen {
+	--panel1: #0b0033;
+	--panel2: #370031;
+	--panel3: #832232;
+	--panel4: #ce8964;
+	--panel5: #eaf27c;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	container-type: inline-size;
+	
+	panel {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 32px;
+		align-items: center;
+		/* dynamic! https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-count */
+		height: calc(100vh / sibling-count());
+		width: 100%;
+
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/contrast-color	*/
+		&:nth-of-type(1) {
+			background-color: var(--panel1);
+			color: contrast-color(var(--panel1));
+			svg { 
+				fill: contrast-color(var(--panel1)); 
+				&:hover {
+					/* https://chriscoyier.net/2023/05/12/add-opacity-to-an-existing-color/ */
+					background-color: rgb(from contrast-color(var(--panel1)) r g b / 10%);
+				}
+			}
+		}
+		&:nth-of-type(2) {
+			background-color: var(--panel2);
+			color: contrast-color(var(--panel2));
+			svg { 
+				fill: contrast-color(var(--panel2)); 
+				&:hover {
+					background-color: rgb(from contrast-color(var(--panel2)) r g b / 10%);
+				}
+			}
+		}
+		&:nth-of-type(3) {
+			background-color: var(--panel3);
+			color: contrast-color(var(--panel3));
+			svg { 
+				fill: contrast-color(var(--panel3)); 
+				&:hover {
+					background-color: rgb(from contrast-color(var(--panel3)) r g b / 10%);
+				}
+			}
+		}
+		&:nth-of-type(4) {
+			background-color: var(--panel4);
+			color: contrast-color(var(--panel4));
+			svg { 
+				fill: contrast-color(var(--panel4)); 
+				&:hover {
+					background-color: rgb(from contrast-color(var(--panel4)) r g b / 10%);
+				}
+			}
+		}
+		&:nth-of-type(5) {
+			background-color: var(--panel5);
+			color: contrast-color(var(--panel5));
+			svg { 
+				fill: contrast-color(var(--panel5)); 
+				&:hover {
+					background-color: rgb(from contrast-color(var(--panel5)) r g b / 10%);
+				}
+			}
+		}
+		
+		.information {
+			font-family: "Inter", sans-serif;
+			text-align: center;
+			.hex {
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+				padding: 16px 0;
+			}
+			.quiet-voice {
+				display: none;
+			}
+		}
+		
+		.options {
+			display: flex;
+			flex-direction: row;
+			gap: 8px;
+			flex-wrap: wrap;
+			
+			svg {
+				width: 36px;
+				height: 36px;
+				padding: 8px;
+				&:hover {
+					border-radius: 6px;
+					cursor: pointer;
+				}
+			}
+		}	
+	}
+	
+	@container (min-width: 960px) {
+		flex-direction: row;
+		panel {
+			flex-direction: column-reverse;
+			justify-content: flex-start;
+			align-items: center;
+			height: auto;
+			padding: 64px 0;
+			.information .quiet-voice {
+				display: block;
+				font-size: 10px;
+				text-transform: capitalize;
+			}
+			.options {
+				flex-direction: column;
+				padding-bottom: 16px;
+				.visually-hidden {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.visually-hidden, .drag-horizontal {
+		display: none;
+	}
+}
