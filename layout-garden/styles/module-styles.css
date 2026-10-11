@@ -1,6 +1,15 @@
-/* Space Grotesk: sans-serif neo-grotesque */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/* 
+Space Grotesk: sans-serif neo-grotesque 
+Inter: sans-serif neo-grotesque 
+Roboto: sans-serif neo-grotesque 
+Anta: sans-serif geometric (techno/futuristic)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
+@font-face {
+	font-family: "TildaSans";
+	src: url("../../assets/fonts/TildaSans-VF.woff2") format("woff2");
+}
 
 
 /* Pixartprinting Footer | Layout 1 - 10/7/26 */
@@ -243,5 +252,188 @@
 
 	.visually-hidden, .drag-horizontal {
 		display: none;
+	}
+}
+
+/* Lorain Colors Substance Article | Layout 3 - 10/9/26 */
+.loraincolors-hero {
+	background-color: #000;
+	color: #fff;
+	height: 110vh;
+	padding: 0 20px 60px 20px;
+	container-type: inline-size;
+	font-family: "TildaSans", sans-serif;
+	
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 100%;
+		padding: 42px 0;
+
+		.title {
+			font-size: clamp(32px, 10vw, 64px);
+			text-transform: uppercase;
+			font-weight: 900;
+			padding: 24px 10px 38px 10px;
+		}
+
+		.quiet-voice {
+			font-size: clamp(10px, 3vw, 14px);
+			text-transform: uppercase;
+			text-wrap: pretty;
+			line-height: 1.25;
+			font-weight: 400;
+			padding: 30px 10px 60px 10px;
+		}
+		
+		.body-paragraph {
+			padding: 0 10px 30px 10px;
+			.calm-voice {
+				font-size: clamp(14px, 3vw, 22px);
+				text-wrap: pretty;
+				line-height: 1.5;
+				max-width: 52ch;
+			}
+		}
+	}
+}
+
+/* ZDNET Nav bar | Layout 4 - 10/11/26 */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.zdnet-nav {
+	background-color: #d0ff4b;
+	container-type: inline-size;
+	font-family: "Roboto", sans-serif;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	padding: 16px;
+	gap: 16px;
+	align-items: center;
+
+	.item-2.branding {
+		font-family: "Anta", sans-serif;
+		.logo {
+			font-size: 48px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.copyright {
+			font-family: sans-serif;
+			font-size: 6px;
+		}
+	}
+
+	a.direction-voice {
+		display: block;
+		text-decoration: none;
+		color: #000;
+		font-weight: 600;
+	}
+
+	.slogan, .item-4, .item-5 {
+		display: none;
+	}
+
+	.menu-icon,
+	.search-icon {
+		width: 30px;
+		height: 30px;
+		fill: #000;
+		&:hover {
+			/* doesn't actually do anything, could add some functionality later? */
+			fill: blue;
+			cursor: pointer;
+		}
+	}
+
+	.google-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	/* medium-size view */
+	@container (min-width: 520px) {
+		.item-2.branding {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 12px;
+		}
+		
+		/* slogan visible	 */
+		.slogan {
+			display: block;
+			text-transform: lowercase;
+			font-weight: 400;
+			.quiet-voice {
+				font-size: 10px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	/* large-size view */
+	@container (min-width: 1080px) {
+		.item-1 {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.item-2 {
+			grid-column: span 2;
+		}
+
+		.item-3 {
+			grid-column: 4;
+			grid-row: 2;
+		}
+
+		.item-4 {
+			display: block;
+			grid-column: 3 / 5;
+			grid-row: 1;
+
+			.links {
+				display: flex;
+				flex-direction: row;
+				gap: 16px;
+			}
+
+			.pref-source, .authentication {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				color: dimgray;
+				border: 1px solid dimgray;
+				border-radius: 5px;
+				padding: 8px;
+				gap: 8px;
+				text-decoration: none;
+				height: 100%;
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+			}
+		}
+
+		.item-5 {
+			display: block;
+			.menu {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				a:hover {
+					color: blue;
+					text-decoration: #000 2px underline;
+					text-underline-offset: 8px;
+				}
+			}
+			grid-column: span 2;
+			grid-row: 2;
+		}
 	}
 }
