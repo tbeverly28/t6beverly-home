@@ -33,6 +33,11 @@
 	 <section class="page-section">
 	 	<inner-column><?php include('modules/zdnet-nav.php')?></inner-column>
 	 </section>
+
+	 <!-- MyAnimeList new footer | Layout 5 - 10/12/26 (additional features possible) -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/myanimelist-footer.php')?></inner-column>
+	 </section>
 </main>
 
  <?php include('footer.php'); ?>

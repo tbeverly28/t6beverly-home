@@ -302,8 +302,6 @@ Anta: sans-serif geometric (techno/futuristic)
 }
 
 /* ZDNET Nav bar | Layout 4 - 10/11/26 */
-@import url("https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 .zdnet-nav {
 	background-color: #d0ff4b;
 	container-type: inline-size;
@@ -437,3 +435,192 @@ Anta: sans-serif geometric (techno/futuristic)
 		}
 	}
 }
+
+/* MyAnimeList new footer | Layout 5 - 10/12/26 */
+.myanimelist-footer {
+	--background: #2e51a2;
+	background-color: var(--background);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+	gap: 20px;
+	font-family: sans-serif;
+	
+	.logo:hover {
+		opacity: 0.7;
+	}
+
+	.app-download {
+		grid-row: span 2;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		a:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.links {
+		grid-column: span 2;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px 5px;
+		padding: 20px 0;
+		border: 1px solid rgba(255,255,255,0.5);
+		border-style: solid none;
+		.no-sell-share {
+			grid-column: span 3;
+		}
+	}
+
+	.socials {
+		grid-column: span 2;
+		padding-top: 20px;
+		navhead.calm-voice {
+			display: none;
+		}
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+
+	.recommended {
+		grid-column: span 2;
+		picture {
+			width: 20px;
+			height: 20px;
+			display: none;
+		}
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 10px;
+			padding: 10px 0;
+			&:hover {
+				text-decoration: none;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.extra {
+		grid-column: span 2;
+		border-top: 1px solid rgba(255,255,255,0.5);
+		padding-top: 20px;
+	}
+	
+	/*text styles*/
+	navhead.calm-voice {
+		display: block;
+		color: rgba(255,255,255,0.7);
+	}
+	
+	.calm-voice {
+		font-size: 16px;
+		line-height: 1.5;
+		color: #fff;
+		&.copyright {
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+	}
+	
+	.quiet-voice {
+		font-size: 10px;
+		color: rgba(255,255,255,0.6);
+		line-height: 1.5;
+	}
+	
+	a {
+		text-decoration: none;
+		display: block;
+		color: #000;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	/* imgs and svgs */
+	.logo path {
+		fill: #fff;
+	}
+	
+	.badge {
+		max-width: 200px;
+	}
+
+	.icon {
+		width: 40px;
+		height: 40px;
+		&:hover {
+			opacity: 0.7;
+		}
+		path {
+			fill: #fff;
+		}
+	}
+	
+	/* queries */
+	@container (min-width: 560px) {
+		grid-template-columns: 1fr 1fr 1fr;
+
+		.logo {
+			max-width: 250px;
+		}
+		.links {
+			grid-column: 2 / 4;
+			grid-row: 1;
+			border: none;
+		}
+		
+		.recommended {
+			grid-column: 1;
+			grid-row: 2;
+			picture {
+				display: block;
+				background-color: gold;
+			}
+		}
+
+		.socials {
+			grid-column: 2;
+			grid-row: 2;
+			padding: 0;
+			navhead.calm-voice {
+				display: block;
+			}
+			ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 10px 0;
+			}
+		}
+
+		.app-download {
+			grid-column: 3;
+			grid-row: 2;
+			gap: 10px;
+		}
+		
+		.extra {
+			grid-column: span 3;
+			grid-row: 3;
+		}
+	}
+	
+	@container (min-width: 850px) {
+		.extra {
+			text-align: center;
+		}
+	}
+	
+	&.dark {
+		--background: #222222;
+	}
+}
+
