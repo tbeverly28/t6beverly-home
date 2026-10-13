@@ -3,8 +3,9 @@ Space Grotesk: sans-serif neo-grotesque
 Inter: sans-serif neo-grotesque 
 Roboto: sans-serif neo-grotesque 
 Anta: sans-serif geometric (techno/futuristic)
+Jost: sans-serif geometric
 */
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 @font-face {
 	font-family: "TildaSans";
@@ -624,3 +625,246 @@ Anta: sans-serif geometric (techno/futuristic)
 	}
 }
 
+/* Roadmap.sh community tab | Layout 6 - 10/12/26 */
+.roadmapsh-community {
+	--small-gutter: 10px;
+	--gutter: 20px;
+	--my-gray: #4a5565;
+	
+	max-width: 960px;
+	margin-inline: auto;
+	padding: var(--gutter);
+	display: flex;
+	flex-direction: column;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gutter);
+	}
+	
+	a {
+		text-decoration: none;
+		color: #000;
+		/* specific styling for the "buttons", im too lazy		 */
+		display: grid;
+		grid-template-columns: auto 1fr;
+		border: 2px solid;
+		border-radius: 8px;
+		padding: var(--small-gutter);
+		gap: 0 var(--small-gutter);
+		align-items: center;
+		width: 210px;
+		.button-subtitle {
+			grid-column: 2;
+		}
+		
+		&:hover {
+			background-color: #000;
+			.icon {
+				background-color: #fff;
+			}
+			.button-title, .button-subtitle {
+				color: #fff;
+			}
+		}
+	}
+	
+	.icon {
+		width: 16px;
+		height: 16px;
+		background-color: #000;
+	}
+	
+	/* font overrides	 */
+	font-family: "Inter", sans-serif;
+	.attention-voice {
+		font-weight: 700;
+		font-size: clamp(24px,10vw,48px);
+	}
+	
+	.direction-voice {
+		font-weight: 600;		
+	}
+	
+	.calm-voice {
+		color: var(--my-gray);
+		font-size: 18px;
+		&.stat-1 {
+			color: royalblue;
+			padding: var(--gutter) 0;
+			font-size: 16px;
+			strong {
+				background-color: royalblue;
+				border-radius: 6px;
+				padding: 4px;
+				color: #fff;
+			}
+		}
+		&.stat-2 {
+			color: #000;
+			padding-bottom: var(--gutter);
+			strong {
+				font-weight: 700;
+			}
+		}
+	}
+	
+	.desc {
+		padding: var(--gutter) 0;
+		max-width: 70ch;
+	}
+	
+	.quiet-voice {
+		color: var(--my-gray);
+	}
+	
+	em {
+		font-weight: 600;
+		text-decoration: underline;
+	}
+	
+	@container (min-width: 800px) {
+		text-align: center;
+		align-items: center;
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 0;
+			li { 
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: var(--gutter) 30px;
+				&:nth-of-type(2) {
+					border: 1px solid rgb(74, 85, 101,0.3);
+					border-style: none solid;
+				}
+			}
+		}
+		
+		.desc {
+			padding: 30px;
+		}
+		
+		a {
+			text-align: left;
+		}
+		
+		.stat-2 {
+			display: flex;
+			flex-direction: column;
+			
+			strong {
+				font-size: 48px;
+			}
+		}
+	}
+}
+
+/* Leetcode module progress | Layout 7 - 10/13/26 (additional features possible) */
+.leetcode-progress {
+	--leet-light-gray: #8d8c8b;
+	--leet-gray: #353433;
+	--leet-dark-gray: #292827;
+	--leet-black: #1b1918;
+	--leet-blue: #21b2ab;
+	--leet-yellow: #f9b114;
+	--leet-red: #ef3837;
+	--leet-green: #088e44;
+	--small-gutter: 10px;
+	--gutter: 20px;
+		
+	background-color: var(--leet-black);
+	padding: var(--gutter);
+	height: 33vh;
+	max-width: 500px;
+	
+	content {
+		background-color: var(--leet-dark-gray);
+		padding: var(--small-gutter) var(--gutter);
+		font-family: "Roboto", sans-serif;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: row;
+		gap: var(--gutter);
+		height: 100%;
+	}
+	
+	.information {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--small-gutter);
+		position: relative;
+		.number-desc {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 5px;
+			padding-top: 15px;
+		}
+	}
+
+	.modes {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.easy, .med, .hard {
+			background-color: var(--leet-gray);
+			border-radius: 8px;
+			padding: 5px 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	
+	.number {
+		font-family: "Anta", sans-serif;
+		.large {
+			font-size: 2.5em;
+		}
+	}
+	
+	/* setting some colors 	 */
+	.calm-voice {
+		color: #fff;
+	}
+	.easy span { 
+		color: var(--leet-blue); 
+	}
+	.med span { 
+		color: var(--leet-yellow); 
+	}
+	.hard span { 
+		color: var(--leet-red); 
+	}
+	.quiet-voice {
+		color: var(--leet-light-gray);
+	}
+	
+	.check {
+		width: 18px;
+		height: 18px;
+		path {
+			fill: var(--leet-green);
+		}
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+	}
+	
+	@container (min-width: 500px) {
+		.information {
+			justify-content: center;
+			.number-desc {
+				padding-top: 0;
+			}
+		}
+	}
+}

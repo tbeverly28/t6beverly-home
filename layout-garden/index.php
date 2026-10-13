@@ -38,6 +38,16 @@
 	 <section class="page-section">
 	 	<inner-column><?php include('modules/myanimelist-footer.php')?></inner-column>
 	 </section>
+
+	 <!-- Roadmap.sh community tab | Layout 6 - 10/12/26 -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/roadmapsh-community.php')?></inner-column>
+	 </section>
+
+	 <!-- Leetcode module progress | Layout 7 - 10/13/26 (additional features possible), will likely be a group of mini modules in a flex-row -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/leetcode-progress.php')?></inner-column>
+	 </section>
 </main>
 
  <?php include('footer.php'); ?>
