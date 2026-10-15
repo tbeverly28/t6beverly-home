@@ -13,6 +13,8 @@ Pixelify Sans: pixel (techno?)
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /* minecraft */
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+/* the nun */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 @font-face {
 	font-family: "TildaSans";
@@ -1486,5 +1488,63 @@ Pixelify Sans: pixel (techno?)
 	}
 	@container (min-width: 1240px) {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+/* The Nun (2018) poster | Layout 15 - 10/15/26 (needs work, additional features possible) */
+.the-nun {
+	/* background-color: black; */
+	background: radial-gradient(#010d13,#000);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: calc(var(--gutter)*2);
+	height: 100vh;
+	overflow: hidden;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-y */
+	overflow-y: scroll;
+	position: relative;
+	
+	.tagline {
+		display: flex;
+		flex-direction: column;
+		color: #fefdfb;
+		text-align: center;
+		align-items: center;
+		font-family: "Marcellus SC", serif;
+		text-transform: uppercase;
+		font-size: 24px;
+		position: sticky;
+		top: 0;
+		gap: var(--small-gutter);
+		max-width: 14ch;
+	}
+
+	.quiet-voice {
+		font-size: 12px;
+	}
+	
+	div.quiet-voice {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: var(--small-gutter);
+	}
+
+	.conjuring-logo {
+		max-width: 140px;
+		filter: saturate(70%);
+	}
+
+	.valak {
+		margin-top: 80vh;
+		width: clamp(320px, 33vw, 640px);
+	}
+
+	.nun-logo {
+		max-width: 320px;
+		position: sticky;
+		bottom: 0;
 	}
 }

@@ -69,6 +69,11 @@
 	 	<inner-column><?php include('modules/settings-panels.php')?></inner-column>
 	 </section>
 
+	 <!-- The Nun (2018) poster  | Layout 15 - 10/15/26 (needs work, additional features possible) -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/the-nun.php')?></inner-column>
+	 </section>
+
 </main>
 
  <?php include('footer.php'); ?>
