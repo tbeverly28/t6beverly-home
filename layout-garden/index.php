@@ -48,6 +48,21 @@
 	 <section class="page-section">
 	 	<inner-column><?php include('modules/leetcode-progress.php')?></inner-column>
 	 </section>
+
+	 <!-- Sabukaru header | Layout 8 - 10/13/26 (additional features possible) -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/sabukaru-header.php')?></inner-column>
+	 </section>
+
+	 <!-- Fontshare nav | Layout 9 - 10/13/26 (additional features possible) -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/fontshare-nav.php')?></inner-column>
+	 </section>
+
+	 <!-- Meletrix keyboards | Layout 10 - 10/13/26 -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/meletrix-keyboards.php')?></inner-column>
+	 </section>
 </main>
 
  <?php include('footer.php'); ?>

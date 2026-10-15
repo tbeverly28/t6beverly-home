@@ -1,8 +1,11 @@
 @import 'reset.css';
 
-* {box-sizing: border-box;}
+* { box-sizing: border-box; }
 
 body {
+	--small-gutter: 10px;
+	--gutter: 20px;
+
 	font-size: 16px;
 	font-family: Tahoma, sans-serif;
 	container-type: inline-size;
@@ -43,6 +46,11 @@ body {
 	line-height: 1.25;
 }
 
+/* link reset */
+a {
+	text-decoration: none;
+}
+
 /* responsive images */
 picture {
 	display: block;
@@ -59,3 +67,5 @@ svg {
 	width: 100%;
 	height: auto;
 }
+
+

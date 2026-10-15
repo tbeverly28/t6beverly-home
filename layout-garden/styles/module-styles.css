@@ -4,8 +4,9 @@ Inter: sans-serif neo-grotesque
 Roboto: sans-serif neo-grotesque 
 Anta: sans-serif geometric (techno/futuristic)
 Jost: sans-serif geometric
+Rajdhani: sans-serif (superellipse/condensed) (calm,stiff,futuristic)
 */
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 @font-face {
 	font-family: "TildaSans";
@@ -865,6 +866,335 @@ Jost: sans-serif geometric
 			.number-desc {
 				padding-top: 0;
 			}
+		}
+	}
+}
+
+/* Sabukaru header | Layout 8 - 10/13/26 (additional features possible) */
+.sabukaru-header {
+	/* they did this so that you can see the content below, interesting!	 */
+	min-height: calc(100vh - 20px);
+	background-image: url("https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1634087188166-M1CCOMFEJBC55BO3TWKY/original_566777038378d4e24c9a15c7a96ab428.jpg?format=2500w");
+	/* https://stackoverflow.com/questions/12605908/change-background-image-opacity, gracias my friend	 */
+	background-color: rgba(0, 0, 0, 0.2);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px solid #000;
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	.headings {
+		text-align: end;
+		font-family: "Rajdhani", sans-serif;
+		font-weight: 600;
+		color: #fff;
+		padding: 10px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		h1.loud-voice {
+			text-transform: uppercase;
+			font-size: clamp(40px, 10vw, 60px);
+		}
+
+		h2.attention-voice {
+			text-transform: capitalize;
+			font-size: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.sbk-nav {
+		background-color: #000;
+		color: #fff;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+		width: 100%;
+		position: sticky;
+		bottom: 0;
+	}
+
+	.nav-items {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+
+		.text-link {
+			display: none;
+		}
+
+		.cart {
+			position: relative;
+		}
+	}
+
+	/* svgs and images */
+	.logo-container {
+		max-width: 200px;
+	}
+
+	.icon {
+		width: 30px;
+		height: 24px;
+		fill: #fff;
+	}
+
+	.plus-1 {
+		position: absolute;
+		top: -5px;
+		right: -10px;
+		width: 20px;
+		height: 20px;
+		circle {
+			fill: #f00;
+			opacity: 0.7;
+		}
+		text {
+			font-size: 12px;
+		}
+	}
+
+	@container (min-width: 650px) {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		border-bottom: 10px solid #000;
+		padding: 20px;
+
+		.sbk-nav {
+			position: relative;
+			top: 0;
+			grid-row: 1;
+			background-color: transparent;
+		}
+
+		.nav-items {
+			font-family: "Rajdhani", sans-serif;
+			font-style: italic;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.search,
+			.menu {
+				display: none;
+			}
+			.text-link {
+				display: block;
+				.direction-voice {
+					text-decoration: none;
+					font-size: 20px;
+					font-weight: 600;
+					color: #fff;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+
+					&:hover {
+						color: red;
+					}
+				}
+			}
+			.cart .icon:nth-of-type(1) {
+				height: 30px;
+			}
+		}
+	}
+}
+
+/* Fontshare nav | Layout 9 - 10/13/26 (additional features possible) */
+.fontshare-nav {
+	container-type: inline-size;
+
+	nav {
+		background-color: #131210;
+		padding-bottom: var(--gutter);
+		display: grid;
+		grid-template-columns: 1fr repeat(3, auto);
+		grid-template-rows: 1fr;
+	}
+	
+	.nav-item {
+		display: flex;
+		border-left: 1px solid rgb(254, 252, 227, 0.3);
+		border-bottom: 1px solid rgb(254, 252, 227, 0.3);
+		padding: var(--gutter);
+		color: #fefce3;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: sans-serif;
+		font-weight: 600;
+		transition: box-shadow 0.2s ease;
+		cursor: pointer;
+
+		&.fonts,
+		&.pairs,
+		&.licenses,
+		p.count span {
+			display: none;
+		}
+
+		&.logo {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			border-left: none;
+		}
+
+		&:not(.logo) {
+			height: 60px;
+			width: 60px;
+			&:hover {
+				/*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow#inset*/
+				box-shadow: inset 0px -2px 0px rgb(254, 252, 227);
+			}
+		}
+	}
+
+	.logo-svg {
+		max-width: 100px;
+	}
+	
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	p.count {
+		font-size: 18px;
+	}
+
+	@container (min-width: 960px) {
+		nav {
+			grid-template-columns: 1fr repeat(4, auto) 1fr;
+		}
+		
+		.nav-item {
+			position: relative;
+			&.fonts, &.pairs, &.licenses {
+				display: flex;
+				font-size: 14px;
+			}
+			
+			&.search {
+				display: none;
+			}
+			
+			&.menu {
+				grid-column: 5;
+				grid-row: 1;
+			}
+			
+			&.selections {
+				grid-column: 6;
+				height: 120px;
+				width: auto;
+			}
+			
+			p.count {
+				font-size: 14px;
+				span {
+					display: inline;
+				}
+			}
+			
+			&:not(.logo, .selections) {
+				height: 120px;
+				width: 120px;
+			}
+		}
+
+		.logo-svg {
+			max-width: 180px;
+		}
+		
+		span.count {
+			position: absolute;
+			bottom: 12px;
+			left: 12px;
+			font-size: 0.75em;
+		}
+	}
+}
+
+/* Meletrix keyboards | Layout 10 - 10/13/26 */
+.meletrix-keyboards {
+	--item-height: clamp(180px, 30vw, 300px);
+
+	.keyboards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--small-gutter);
+		padding: var(--gutter);
+	}
+
+	li {
+		position: relative;
+		height: var(--item-height);
+	}
+
+	.item-1, .item-2 {
+		grid-column: span 2;
+	}
+	
+	.item-2 {
+		grid-row: span 2;
+		/* little bit of gutter to cover the bottom */
+		height: calc(var(--item-height) * 2 + var(--small-gutter));
+	}
+
+	.attention-voice {
+		font-family: "Jost", sans-serif;
+		font-weight: 600;
+		font-size: clamp(22px, 6vw, 32px);
+		color: #fff;
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		z-index: 1;
+	}
+
+	.item-1 .attention-voice {
+		top: auto;
+		left: auto;
+		bottom: 16px;
+		right: 16px;
+	}
+
+	.img-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		
+		img {
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			transition: transform 0.4s ease-in-out;
+		}
+		
+		&:hover img {
+			transform: scale(1.25);
+		}
+	}
+
+	@container (min-width: 700px) {
+		/* 	slight reset on the height	 */
+		--item-height: clamp(180px, 20vw, 300px);
+		.keyboards {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		
+		.item-1 {
+			grid-column: 1 / 3;
+		}
+		
+		.item-2 {
+			grid-column: 3 / 5;
+			grid-row: 1 / 3;
 		}
 	}
 }
