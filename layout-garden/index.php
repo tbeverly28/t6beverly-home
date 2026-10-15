@@ -63,6 +63,12 @@
 	 <section class="page-section">
 	 	<inner-column><?php include('modules/meletrix-keyboards.php')?></inner-column>
 	 </section>
+
+	 <!-- Settings panels: cobalt.tools, Minecraft, Metal Gear Solid 2, Trader Joe's | Layouts 11-14 10/14/26 (additional features possible) -->
+	 <section class="page-section">
+	 	<inner-column><?php include('modules/settings-panels.php')?></inner-column>
+	 </section>
+
 </main>
 
  <?php include('footer.php'); ?>
