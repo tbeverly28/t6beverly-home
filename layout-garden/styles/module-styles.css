@@ -15,6 +15,8 @@ Pixelify Sans: pixel (techno?)
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 /* the nun */
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+/* comico blimp */
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 
 @font-face {
 	font-family: "TildaSans";
@@ -1546,5 +1548,265 @@ Pixelify Sans: pixel (techno?)
 		max-width: 320px;
 		position: sticky;
 		bottom: 0;
+	}
+}
+
+/* Comico Blimp w/ Hype page | Layout 16, 17 - 10/15/26 (needs work, additional features possible) */
+.comico-blimp {
+	--cb-cream: #e0ddd9;
+	--cb-pink: #ba3262;
+	--cb-yellow: #e5f20d;
+	--cb-blue: #0d79f2;
+	--cb-lime: #8fd926;
+	--title-size: clamp(20px,8vw,96px);
+	
+	background-color: var(--cb-cream);
+	padding-top: calc(var(--gutter)*2);
+	
+	.title {
+		text-transform: uppercase;	
+		margin-bottom: 0;
+		text-align: center;	
+		font-family: "Bakbak One", sans-serif;
+  		font-weight: 400;
+	}
+	hypegrid .title {
+		font-size: clamp(20px,8vw,60px);
+		color: var(--cb-yellow);
+		padding: var(--small-gutter);
+		background-color: black;
+		position: relative;
+		top: -0.25em;
+	}
+	.attention-voice {
+		font-size: 16px;
+		font-weight: 600;
+		font-style: italic;
+	}
+	h4.attention-voice {
+		padding-top: var(--gutter);
+	}
+	h4.calm-voice {
+		font-style: italic;
+	}
+	.calm-voice,.attention-voice,.quiet-voice {
+		font-family: sans-serif;
+	}
+	.description h5.attention-voice {
+		display: inline;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.description p.calm-voice {
+		display: inline;
+	}
+	em {
+		font-style: italic;
+	}
+	strong {
+		font-weight: 600;
+	}
+	hypegrid {
+		display: flex;
+		flex-direction: column;
+		gap: var(--small-gutter);
+		background-color: var(--cb-pink);
+		padding-inline: var(--gutter);
+		border: 2px solid black;
+	}
+	.upcoming {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gutter);
+	}
+	.upcoming > li {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gutter);
+		padding: var(--gutter);
+		&.november {
+			background-color: var(--cb-yellow);
+			border: 2px solid black;
+			height: fit-content;
+		}
+		&.december {
+			h4.calm-voice, h5.attention-voice, strong.name {
+				color: #fff;
+			}
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--gutter)*2);
+			li {
+				display: flex;
+				flex-direction: column;
+				gap: var(--small-gutter);
+				text-align: justify;
+			}
+		}
+	}
+	.img-container img {
+		border: 1px solid black;
+	}
+	figure.img-container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		figcaption {
+			color: #fff;
+			writing-mode: sideways-rl;
+			padding-inline-end: var(--gutter);
+		}
+	}
+	.copyright {
+		padding-bottom: var(--gutter);
+		padding-inline: var(--gutter);
+		line-height: 1.5;
+	}
+	.logo {
+		display: flex; 
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: var(--small-gutter);
+		margin: var(--gutter) 0;
+		font-size: var(--title-size);
+	}
+	.logo .title {
+		font-size: 1em;
+	}
+	.logo .icon {
+		width: 1em;
+	}
+	.side-panel {
+		background-color: var(--cb-blue);
+		border-top: 10px solid black;
+		border-bottom: 10px solid black;
+		padding: var(--gutter);
+	}
+	article.column {
+		background-color: var(--cb-cream);
+		border: 2px solid black;
+		padding: var(--gutter);
+		margin: 0 var(--gutter);
+		strong.name {
+			color: var(--cb-blue);
+		}
+	}
+	article.column p {
+		text-indent: 3em;
+		text-align: justify;
+		padding-bottom: calc(var(--small-gutter) / 2);
+	}
+	.sign-off {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: var(--small-gutter);
+	}
+	.staff-wrapper {
+		background-color: var(--cb-lime);
+		padding: var(--gutter);
+		border: 2px solid black;
+		display: flex;
+		flex-direction: column;
+		gap: var(--gutter);
+		h3.attention-voice {
+			font-style: normal;
+			text-align: center;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: var(--small-gutter);
+		}
+		li {
+			display: flex;
+			flex-direction: column;
+			.name {
+				font-weight: 600;
+			}
+		}
+	}
+	
+	@container (min-width: 570px) {
+		.staff li {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	@container (min-width: 960px) {
+		/* outer-grid */
+		hypegrid {
+			display: grid;
+			grid-template-columns: auto repeat(5,1fr);
+			
+			h3.attention-voice {
+				grid-column: 2 / 3;
+				grid-row: 1;
+				align-self: end;
+			}
+			.title {
+				grid-column: 3 / 6;
+				grid-row: 1;
+			}
+			.copyright {
+				grid-column: 1 / 2;
+				grid-row: 2;
+				writing-mode: sideways-rl;
+				max-height: 78ch;
+				font-size: 10px;
+				line-height: 1.25;
+			}
+			.upcoming {
+				grid-column: 2 / 7;
+				grid-row: 2;
+			}
+		}
+		/* inner grid */
+		.upcoming {
+			flex-direction: row;
+			gap: var(--small-gutter);
+			li ul li {
+				max-width: 25vw;
+			}
+		}		
+		/* inner-inner grid */
+		.upcoming .december ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;	
+		}
+	}
+	
+	@container (min-width: 1500px) {
+		display: grid;
+		grid-template-columns: 500px 1fr;
+		grid-template-rows: auto 1fr;
+		padding-top: 0;
+		hypegrid .title {
+			top: 0;
+		}
+		.side-panel {
+			grid-column: 1 / 2;
+			grid-row: 1 / 3;
+			display: flex;
+			flex-direction: row;
+			border-top: 0;
+			border-bottom: 0;
+			border-right: 10px solid black;
+			.logo {
+				writing-mode: sideways-lr;
+			}
+		}
+		.hype-page {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+		.staff-wrapper {
+			border-top: 10px solid black;
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+		}
 	}
 }

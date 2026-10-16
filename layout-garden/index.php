@@ -14,66 +14,70 @@
 	</section>
 	 -->
 
-	 <!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
-	 <section class="page-section">
-	 	<inner-column><?php include('modules/pixartprinting-footer.php')?></inner-column>
-	 </section>
+	<!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
+	<section class="page-section">
+		<inner-column><?php include('modules/pixartprinting-footer.php')?></inner-column>
+	</section>
 
-	 <!-- Coolors Palette Generator | Layout 2 - 10/8/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- Coolors Palette Generator | Layout 2 - 10/8/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/coolors-palette-gen.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Lorain Colors Substance Article | Layout 3 - 10/9/26 -->
-	 <section class="page-section">
+	<!-- Lorain Colors Substance Article | Layout 3 - 10/9/26 -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/loraincolors-hero.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- ZDNET Nav bar | Layout 4 - 10/11/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- ZDNET Nav bar | Layout 4 - 10/11/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/zdnet-nav.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- MyAnimeList new footer | Layout 5 - 10/12/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- MyAnimeList new footer | Layout 5 - 10/12/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/myanimelist-footer.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Roadmap.sh community tab | Layout 6 - 10/12/26 -->
-	 <section class="page-section">
+	<!-- Roadmap.sh community tab | Layout 6 - 10/12/26 -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/roadmapsh-community.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Leetcode module progress | Layout 7 - 10/13/26 (additional features possible), will likely be a group of mini modules in a flex-row -->
-	 <section class="page-section">
+	<!-- Leetcode module progress | Layout 7 - 10/13/26 (additional features possible), will likely be a group of mini modules in a flex-row -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/leetcode-progress.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Sabukaru header | Layout 8 - 10/13/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- Sabukaru header | Layout 8 - 10/13/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/sabukaru-header.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Fontshare nav | Layout 9 - 10/13/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- Fontshare nav | Layout 9 - 10/13/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/fontshare-nav.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Meletrix keyboards | Layout 10 - 10/13/26 -->
-	 <section class="page-section">
+	<!-- Meletrix keyboards | Layout 10 - 10/13/26 -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/meletrix-keyboards.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- Settings panels: cobalt.tools, Minecraft, Metal Gear Solid 2, Trader Joe's | Layouts 11-14 10/14/26 (additional features possible) -->
-	 <section class="page-section">
+	<!-- Settings panels: cobalt.tools, Minecraft, Metal Gear Solid 2, Trader Joe's | Layouts 11-14 10/14/26 (additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/settings-panels.php')?></inner-column>
-	 </section>
+	</section>
 
-	 <!-- The Nun (2018) poster  | Layout 15 - 10/15/26 (needs work, additional features possible) -->
-	 <section class="page-section">
+	<!-- The Nun (2018) poster  | Layout 15 - 10/15/26 (needs work, additional features possible) -->
+	<section class="page-section">
 	 	<inner-column><?php include('modules/the-nun.php')?></inner-column>
-	 </section>
+	</section>
 
+	<!-- Comico Blimp w/ Hype page | Layout 16, 17 - 10/15/26 (needs work, additional features possible) -->
+	<section class="page-section">
+	 	<inner-column><?php include('modules/comico-blimp.php')?></inner-column>
+	</section>
 </main>
 
  <?php include('footer.php'); ?>
