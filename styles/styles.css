@@ -1,0 +1,189 @@
+* { box-sizing: border-box; }
+
+body {
+	font-size: 18px;
+	color: #272329;
+}
+
+/* text styles */
+.landing h1 {
+	font-size: 4em;
+	font-family: "Londrina Solid", Tahoma, sans-serif;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: "Excon", Tahoma, sans-serif;
+	font-weight: 900;
+	color: #4a4142;
+	margin-bottom: 6px;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: "Excon", Tahoma, sans-serif;
+	font-weight: 900;
+	color: #967862;
+}
+
+strong {
+	font-family: "Excon", Tahoma, sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-size: 1em;
+	font-family: "Ranade", Arial, sans-serif;
+}
+
+.block-paragraph {
+	max-width: 71ch;
+	line-height: 1.5;
+}
+
+/*.inline-paragraph {
+	display: inline;
+}*/
+
+em {
+	font-family: "Ranade", Arial, sans-serif;
+	font-style: italic;
+	font-weight: light;
+}
+
+s {
+	font-family: inherit;
+	font-weight: 500;
+	color: #9E3F4A;
+}
+
+a {
+	font-family: "Excon", Tahoma, sans-serif;
+	font-weight: 500;
+   color: #272329;
+   text-underline-offset: 6px;
+}
+
+a:hover {
+	color: #7B777D;
+}
+
+a:visited {
+   color: #272329;
+}
+
+.accent {
+	display: block;
+	font-family: "Witchcraft Halloween", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	opacity: 80%;
+	/*messes up the font
+	letter-spacing: 0.02em;*/
+}
+
+/* container styles */
+.menu, .page-content, .inner-column {
+	max-width: 960px;
+	margin-inline: auto;
+}
+
+.page-header {
+	background-color: #e4e0c2;
+}
+
+.page-content {
+	/* just for testing */
+	min-height: 70vh;
+}
+
+.page-footer {
+	padding-bottom: 5em;
+}
+
+.menu, .inner-column, .page-section, .landing, 
+.landing h1, h2, h3, .block-paragraph, 
+.inline-paragraph, a, li, .collage {
+	padding: 6px;
+}
+
+.page-section, .landing, .page-footer {
+	margin-top: 1.25em;
+}
+
+
+/* nav styles */
+.skip {
+	display: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu a:hover {
+	text-decoration: underline;
+	/*hey this is new!*/
+	text-underline-offset: 6px;
+	color: #7B777D;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu li  {
+	display: inline;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+/* list styles */
+.sublist {
+	text-decoration: none;
+}
+
+.stdlist-wrapper {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.stdlist {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.stdlist li {
+	font-family: "Ranade", Arial, sans-serif;
+	color: #4a4142;
+	max-width: 58ch;
+	line-height: 1.5;
+}
+
+/* img styles */
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 40px;
+}
+
+.img-container {
+	display: inline-block;
+	max-width: 294px;
+}
+
+ img {
+	display: block;
+  	width: 100%;
+  	height: auto; 
+}
+
+/*.page-header, .page-content, .page-footer {
+	padding: 6px 12px;
+}*/
+
+
+
