@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- some metadata -->
+		<title>Greet Couple | THA-v1</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A horror-themed choose your own adventure by Tahir Beverly.">
+		<style>
+			* {
+				color: white;
+				/*find a good font*/
+				font-family: monospace;
+			}
+			html, body {
+				max-width: 960px;
+				/*min-width for responsiveness??*/
+				height: 100%;
+				margin: 0 auto;
+			}
+			header {
+				overflow: auto;
+				padding: 15px;
+			}
+			h1 {
+				float: right;
+				margin: 0 8px;
+				padding: 0;
+			}
+			h2 {
+				float: left;
+				margin: 0 8px;
+				padding-top: 5px;
+			}
+			#outer {
+				background: black;
+				width: 100%;
+				height: 100%;
+			}
+			#inner {
+				background: white;
+				width: 95%;
+				height: 65%;
+				margin: 0 auto;
+				/*idk why this works, 0 breaks it*/
+				padding-top: 1px;
+			}
+			#inner-img {
+				background: black;
+				width: 95%;
+				height: 46%;
+				margin: 20px auto 0 auto;
+			}
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+			#dialog {
+				width: 93%;
+				height: 10%;
+				margin: 0 auto 10px auto;
+				text-align: center;
+			}
+			#inner-context {
+				background: black;
+				width: 95%;
+				height: 34%;
+				margin: 0 auto;
+				padding-top: 1px;
+			}
+			ul {
+				background: white;
+				list-style-type: none;
+				width: 90%;
+				margin: 20px auto;
+				padding: 25px;
+			}
+			li {
+				display: inline-block;
+			}
+			#status li {
+				margin-right: 35px;
+				padding: 0 0 0 13px;
+			}
+			#options {
+				text-align: center;
+			}
+			#options li {
+				margin: 0 4px;
+				padding: 20px 0px;
+			}
+			.name, .loc {
+				font-size: 18px;
+				color: black;
+				padding: 0;
+				margin: 0;
+			}
+			.loc {
+				font-size: 18px;
+				color: gray;
+			}
+			#dialog p {
+				font-size: 24px;
+				color: black;
+			}
+			.context-text {
+				font-size: 18px;
+				margin: 20px;
+				line-height: 1.25;
+			}
+			a {
+				color: white;
+				background-color: black;
+				font-size: 20px;
+				text-decoration: none;
+				padding: 20px 25px;
+				margin: 0;
+			}
+			a:hover {
+				background-color: red;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<!-- find good font for these -->
+			<header>
+				<h1>Tahir's Horror Adventure</h1>
+				<h2>October 12 1978 - 8:26 pm</h2>
+			</header>
+			<!-- context screen -->
+			<div id="inner">
+				<div id="inner-img">
+					<!-- picture should look like the couple from American Gothic -->
+					<img src="../assets/greet-couple.png" alt="FAILED LOAD">
+				</div>
+				<div id="dialog">
+					<p class="context-text">
+						"Welcome to our lovely abode! Make yourselves at home."
+					</p>
+				</div>
+				<div id="inner-context">
+					<!-- need a way to set max height and be able to scroll -->
+					<p class="context-text">
+						After a two-hour-long drive, you finally make it. James and Solomon begin to unload the luggage from the truck, while the others go to the front door with you. The porch light looks slightly cracked, flickering for long periods. 
+					</p>
+					<p class="context-text">
+						The couple finally arrives at the door and lets you in. They ask that you not enter their grandson Tobias’ old room, but you can find the guest room next to his, upstairs. Solomon takes some of the luggage indoors while James hangs back to finish unloading the truck.
+					</p>
+				</div>
+			</div>
+			<!-- characters status -->
+			<ul id="status">
+				<li>
+					<p class="name">You</p>
+					<p class="loc">Foyer</p>
+				</li>
+				<li>
+					<p class="name">James</p>
+					<p class="loc">Truck</p>
+				</li>
+				<li>
+					<p class="name">Tai</p>
+					<p class="loc">Foyer</p>
+				</li>
+				<li>
+					<p class="name">Nai</p>
+					<p class="loc">Foyer</p>
+				</li>
+				<li>
+					<p class="name">Solomon</p>
+					<p class="loc">Foyer</p>
+				</li>
+			</ul>
+			
+			<ul id="options">
+				<li><a href="guest-room.html">Head to the guest room</a></li>
+				<li><a href="first-floor.html">Explore the first floor</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

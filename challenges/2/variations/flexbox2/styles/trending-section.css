@@ -1,0 +1,104 @@
+.trending {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	position: relative;
+	background-color: rgba(39, 106, 107,0.8);
+	flex-grow: 1;
+
+	.inner-column {
+		display: inherit;
+		flex-direction: inherit;
+		width: 100%;
+		padding: 0.5rem;
+
+
+		.loud-voice {
+			color: #d7e0e2;
+		}
+		
+		.designers {
+			display: inherit;
+			flex-direction: inherit;
+			margin-top: 1rem;
+			gap: 1rem;
+
+			li {
+				box-shadow: 0 6px 5px 0 rgba(0,0,0,0.5);
+				padding: 0.5rem;
+				background-color: rgba(255,255,255,0.8);
+				.showcase-link {
+					.item-image {
+						background-color: #fff;
+						img {
+							object-fit: cover;
+							aspect-ratio: 3 / 2;
+						}
+					}
+					.attention-voice {
+						color: #36626c;
+					}
+					&:hover {
+						opacity: 0.6;
+						background-color: rgba(255,255,255,0.6);
+					}
+				}
+				&.organicgarmentz img {
+					object-position: 0 22%;
+				}
+			}
+		}
+	}
+}
+
+.showcase-link {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+
+/* @600px */
+@media (min-width: 777px) {
+	.showcase-link {
+		flex-direction: row;
+		.item-image {
+			flex-basis: 50%;
+		}
+		.attention-voice {
+			flex-basis: 50%;
+		}
+	}
+}
+
+/* @960px */
+@media (min-width: 960px) {
+	.trending .inner-column .designers {
+		flex-direction: row;
+		.showcase-link {
+			flex-direction: column;
+		}
+		li {
+			flex-basis: 50%;
+		}
+	}
+}
+
+/* @1299px */
+@media (min-width: 1299px) {
+	.page-content .page-section.trending {
+		padding-bottom: 45vh;
+	}
+	.trending .inner-column .designers li {
+		background-color: transparent;
+		box-shadow: none;
+		
+		.showcase-link {
+			flex-direction: row;
+		}
+		h3.attention-voice {
+			background-color: #d7e0e2;
+		}
+	}
+}

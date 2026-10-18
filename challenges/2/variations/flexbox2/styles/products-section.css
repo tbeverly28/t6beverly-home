@@ -1,0 +1,186 @@
+.products {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	position: relative;
+	/*overflow: hidden;*/
+	background-color: #a68a64;
+
+	.inner-column {
+		display: inherit;
+		flex-direction: inherit;
+		justify-content: inherit;
+		align-items: inherit;
+		width: 100%;
+		
+		section {
+			display: inherit;
+			flex-direction: inherit;
+			justify-content: inherit;
+			align-items: inherit;
+			margin-top: 2rem;
+			background-color: rgba(255,255,255,0.25);
+			gap: 1rem;
+
+			&.caps {
+				.product-img-link:hover {
+					.product-image {
+						border: 6px solid #880035;
+					}
+				}
+				.product-information a:hover {
+					color: #880035;
+				}
+			}
+
+			&.beanies {
+				.product-img-link:hover {
+					.product-image {
+						border: 6px solid #009395;
+					}
+				}
+				.product-information a:hover {
+					color: #009395;
+				}
+			}
+
+			&.faux-furs {
+				.product-img-link:hover {
+					.product-image {
+						border: 6px solid #ffbf00;
+					}
+				}
+				.product-information a:hover {
+					color: #ffbf00;
+				}
+			}
+
+			h3 + p {
+				padding-top: 0;
+			}
+
+			.product-img-link {
+				width: clamp(120px, 20vw, 200px);
+				.product-image {
+					border-radius: 50%;
+					overflow: hidden;
+					background-color: #fff;
+					
+					/* define the desired width-to-height ratio of an element's box. -MDN (1 is 1 by 1) */
+					aspect-ratio: 1;
+
+					img {
+						height: 100%;
+						object-fit: contain;
+					}
+				}
+			}
+
+			.product-information {
+				display: block;
+				flex-grow: 1;
+				a {
+					height: auto;
+					padding: 0.5rem;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.logo-container.three {
+		svg.logo-full, svg.logo-hats {
+			display: none;
+		}
+	}
+}
+
+
+/* @777px */
+@media (min-width: 777px) {
+	.products {
+		.inner-column section {
+			flex-direction: row;
+
+			.product-information {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		.logo-container.three {
+			max-width: 20%;
+			bottom: -4rem;
+			right: 0;
+
+			svg.logo-full {
+				display: block;
+			}
+		}
+	}
+}
+
+/* @1299 */
+@media (min-width: 1299px) {
+	.products .inner-column {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+
+		section {
+			max-width: 33%;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 1rem;
+			
+			.product-information {
+				justify-content: space-between;
+				align-items: center;
+				text-align: center;
+				gap: 1rem;
+				
+				a {
+					text-decoration: none;
+					background-color: #292222;;
+					border-radius: 0.75rem;
+					color: #fff;
+				}
+			}
+
+			&.caps {
+				.product-information a:hover {
+					background-color: #880035;
+					color: #fff;
+				}
+			}
+
+			&.beanies {
+				.product-information a:hover {
+					background-color: #009395;
+					color: #fff;
+				}
+			}
+
+			&.faux-furs {
+				.product-information a:hover {
+					background-color: #ffbf00;
+					color: #292222;
+				}
+			}
+		}
+	} 
+		
+	.products .logo-container.three {
+		bottom: -3rem;
+
+		svg.logo-full {
+			display: none;
+		}
+
+		svg.logo-hats {
+			display: block;
+		}
+	}
+}

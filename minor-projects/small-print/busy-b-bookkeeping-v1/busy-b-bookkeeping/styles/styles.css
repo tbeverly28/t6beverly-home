@@ -1,0 +1,369 @@
+* { box-sizing: border-box; }
+
+html { 
+	font-size: 20px; 
+	font-family: "Rubik", Arial, sans-serif;
+	font-weight: 300;
+}
+
+/* small */
+/*body { background-color: #ff9197; transition: 1s; }*/
+
+body {
+  background-color: white;
+}
+
+/* general container styles */
+.page-header, .page-footer,
+.page-section, .footer-content,
+.landing-text, .team-wrapper, .badges, .footer-content,
+.team-member, .contact, .location, .service, .section-links {
+  padding: 0.5rem 1rem;
+}
+
+.page-header, .banner, .page-footer {
+  background-color: #f3bf49; 
+  color: white;
+}
+
+.about, .main-contact {
+  background-color: #272329;
+  color: white;
+}
+
+/* text styles */
+h1, .accent {
+  font-family: "Londrina Solid", Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: start;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h1 .accent {
+  display: block;
+  font-size: 39px;
+  color: #272329;
+}
+
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+em, a, .contact .accent,  {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.sub-services {
+  list-style: square inside;
+}
+
+li, .name {
+  font-size: 20px;
+  margin-top: 0.75rem;
+}
+
+.block-paragraph {
+  display: block;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+/* link styles */
+a {
+  color: #3e211b;
+}
+
+a:hover {
+  color: #914d1e;
+}
+
+/* image styles */
+picture {
+  display: block;
+}
+
+img {
+  display: block; 
+  width: 100%;
+  height: auto; 
+}
+
+.logo {
+  display: inline-block;
+  max-width: 88px;
+  border: 2px solid #f3bf49;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.portrait {
+  max-width: 300px;
+}
+
+.square {
+  display: inline-block;
+  max-width: 96px;
+}
+
+.icon {
+  fill: white;
+}
+
+/* landing extra styling */
+.landing {
+  text-align: center;
+}
+
+.landing-text .block-paragraph {
+  max-width: 54ch;
+  margin-inline: auto;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.landing-logo h1 {
+  display: inline-block;
+}
+
+/* banner extra styling */
+.banner {
+  padding: 0.25rem 1rem;
+}
+
+.banner-text {
+  display: inline-block;
+}
+
+.banner-text strong {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.banner-text .accent {
+  font-size: 34px;
+}
+
+.badges {
+  padding: 0.5rem 0;
+}
+
+.phone-large {
+  font-size: 60px;
+}
+
+/* about extra styling */
+.team-wrapper {
+  text-align: center;
+  padding: 0;
+}
+
+.team-member {
+  display: inline-block;
+  text-align: start;
+  max-width: 149px;
+  padding: 0.5rem 0 0 0;
+}
+
+.name {
+  color: #f3bf49;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 0.25rem;
+}
+
+.about .block-paragraph {
+  margin-top: 1rem;
+}
+
+/* services extra styling */
+.service {
+  display: inline-block;
+  margin-top: 0.25rem;
+  border: 0.25rem solid #f3bf49; 
+  border-radius: 0.25rem;
+  color: #272329;
+}
+
+.bookkeeping, .other {
+  vertical-align: top;
+  height: 200px;
+  width: 32%;
+  height: 250px;
+  padding: 0.5rem 0.25rem;
+}
+
+/* contact extra styling */
+.contact p, .loc-info h3  {
+  display: inline-block;
+}
+
+.loc-info {
+  vertical-align: top;
+  margin-right: 2rem;
+}
+
+.loc-info .block-paragraph {
+  padding-left: 30px;
+}
+
+/* footer extra styling */
+.footer-content .landing-logo, .section-links {
+  display: inline-block;
+  max-width: 267px;
+}
+
+/*TESTING RESPONSIVENESS*/
+/* medium 
+@media (min-width: 500px) {
+  body { background-color: #ffca92; }
+}*/
+
+/* large */
+@media (min-width: 800px) {
+  /*body { background-color: #fdf48f; }*/
+
+  /* large changes */
+  h1 {
+    font-size: 96px;
+  }
+  
+  h1 .accent {
+    font-size: 63px;
+  }
+
+  .logo {
+    max-width: 136px;
+  }
+
+  .phone-large {
+    display: inline-block;
+    font-size: 84px;
+    margin-left: 1rem;
+  }
+
+  .team-member {
+    max-width: 249px;
+    padding: 0.5rem 1rem;
+  }
+
+  .banner h2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .badges {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .square {
+    display: inline-block;
+    max-width: 96px;
+    margin: 0 0.25rem;
+  }
+
+  .section-links {
+    float: right;
+  }
+
+  .section-links li {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  /*body { background-color: #9adbba; }*/
+
+  /* extra large changes */
+  .page-section, .banner, .footer-content {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .team-wrapper {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .team-member {
+    max-width: 500px;
+  }
+
+  .bookkeeping, .other {
+    padding: 0.5rem 0.25rem;
+    width: 45%;
+    height: 200px;
+  }
+
+  .other {
+    width: 27%;
+  }
+
+  .footer-content .landing-logo, .section-links {
+    max-width: none;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 34px;
+  }
+
+  em, a, .contact .accent,  {
+    font-size: 24px;
+  }
+
+  .sub-services li, .name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .block-paragraph {
+    font-size: 20px; 
+  }
+
+  .banner-text strong {
+    font-size: 1rem;
+  }
+
+  .banner-text .accent {
+    font-size: 60px;
+  }
+
+  .phone-large {
+    font-size: 96px;
+    margin-left: 2rem;
+  }
+
+  .badges {
+    padding: 0.5rem 1rem;
+  } 
+}
