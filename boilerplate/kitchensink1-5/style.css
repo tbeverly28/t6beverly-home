@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+	font-family: "215000E";
+	src: url("215000E.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Excon";
+	src: url("Excon-Variable.woff2") format("woff2");
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	--gutter: 20px;
+	--small-gutter: 10px;
+	--tiny-gutter: 5px;
+}
+
+body {
+	container-type: inline-size;
+}
+
+.title {
+	font-family: "Excon", sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+}
+.loud-voice {
+	font-family: "Excon", sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+}
+.attention-voice {
+	font-family: "Excon", sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+.direction-voice {
+	font-family: "Rubik", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	text-wrap: pretty;
+	line-height: 1.5;
+}
+.calm-voice {
+	font-family: "Rubik", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	text-wrap: pretty;
+	line-height: 1.5;
+}
+.quiet-voice {
+	font-family: "Rubik", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-wrap: pretty;
+	line-height: 1.25;
+}
+
+h1, h2, h3 {
+	padding: var(--small-gutter) 0;
+}
+
+h1 + .calm-voice, h1 + .quiet-voice, h2 + .calm-voice, h2 + .quiet-voice{
+	padding-top: var(--gutter);
+	padding-bottom: var(--gutter);
+}
+
+/*  */
+.page-section,
+.inner-column {
+	padding: var(--gutter);
+}
+
+.site-header {
+	background-color: black;
+	position: sticky;
+	top: 0;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav.menu ul {
+	display: flex;
+	flex-direction: column;
+	@container (min-width: 750px) {
+		display: grid;
+		grid-template-columns: repeat(4, auto) 1fr;
+		gap: 0;
+	}
+}
+
+nav.menu a {
+	color: white;
+	padding: var(--small-gutter);
+	&:hover {
+		background-image: linear-gradient(to right, white, rgba(255,255,255,0.5));
+		color: black;
+	}
+
+	@container (min-width: 750px) {
+		padding: var(--small-gutter) calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: fit-content;
+		
+		&:hover {
+			background-image: none;
+			background-color: white;
+		}
+	}
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gutter);
+	.direction-voice {
+		border: 1px solid red;
+	}
+}
+
+.lists .stdlist-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: calc(var(--gutter) * 2);
+	.ordered {
+		list-style-type: decimal;
+	}
+	.unordered {
+		list-style-type: square;
+	}
+}
+
+/* links */
+a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.direction-voice {
+	/* "Rubik Distressed" "Rubik Glitch" "Rubik Dirt"  */
+	&.rbk-distressed:hover {
+		font-family: "Rubik Distressed", sans-serif;
+	}
+	&.rbk-glitch:hover {
+		font-family: "Rubik Glitch", sans-serif;
+	}
+	&.rbk-dirt:hover {
+		font-family: "Rubik Dirt", sans-serif;
+	}
+	&.grunge:hover {
+		font-family: "215000E", sans-serif;
+		font-size: 20px;
+	}
+}
+
+/*  responsive image setup */
+picture {
+	display: block;
+}
+
+img,
+svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.logo picture {
+	max-width: 60px;
+}
+
+/* hide me! */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
