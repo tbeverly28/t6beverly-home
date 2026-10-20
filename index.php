@@ -8,9 +8,18 @@
 
 		<main class="page-content">
 			<inner-column>
+				<section class="landing">
+					<h1 class="title">Tahir Beverly</h1>
+					<p class="calm-voice">
+						¡Hola! Welcome to my website. This is the home page.
+					</p>
+				</section>
+
 				<!-- one a day graphics -->
 				<?php include('one-a-day.php')?>	
 
+				<!-- new web portal -->
+				<?php include('web-portal.php')?>	
 			</inner-column>
 		</main>
 

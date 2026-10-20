@@ -48,8 +48,10 @@ h2 + .quiet-voice {
 }
 
 inner-column {
-	display: block;
 	padding: var(--gutter);
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gutter) * 2);
 }
 
 .page-content .page-section {
@@ -152,20 +154,21 @@ ul.stdlist {
 .attention-voice {
 	font-family: "Excon", sans-serif;
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .direction-voice {
 	font-family: "Rubik", sans-serif;
-	font-size: 1rem;
+	font-size: 18px;
 	font-weight: 500;
 	text-wrap: pretty;
 	line-height: 1.5;
 
 	&:hover {
+		/*font-family: "Rubik Dirt", sans-serif;*/
 		font-family: "215000E", sans-serif;
 		font-size: 20px;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 }
 

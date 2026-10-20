@@ -4,7 +4,7 @@
 	
 	<!-- styles -->
 	<link rel="stylesheet" href="/t6beverly-home/styles/styles.css">
-	<link rel="stylesheet" href="/t6beverly-home/styles/graphics-grid.css">
+	<link rel="stylesheet" href="/t6beverly-home/styles/homepage-styles.css">
 	<!-- font apis -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

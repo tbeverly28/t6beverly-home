@@ -1,4 +1,6 @@
 <section class="page-section graphics-grid">
+	<h2 class="loud-voice">One-a-day graphics</h2>
+	
 	<ul class="stdlist stylized">
 		<li>
 			<figure class="img-container">
