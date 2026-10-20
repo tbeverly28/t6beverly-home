@@ -1,5 +1,0 @@
-		<footer class="page-footer">
-			footer
-		</footer>
-	</body>
-</html>

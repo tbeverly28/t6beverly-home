@@ -17,6 +17,14 @@ html {
 	--gutter: 20px;
 	--small-gutter: 10px;
 	--tiny-gutter: 5px;
+
+	/*old colors (1.0) */
+	--og-lightbrown: #967862;
+	--og-brown: #4a4142;
+	--og-uhidk: #9E3F4A;
+	--og-black: #272329;
+	--og-uhidk2: #7B777D;
+	--og-uhidk3: #e4e0c2;
 }
 
 body {
@@ -69,7 +77,6 @@ h1 + .calm-voice, h1 + .quiet-voice, h2 + .calm-voice, h2 + .quiet-voice{
 	padding-bottom: var(--gutter);
 }
 
-/*  */
 .page-section,
 .inner-column {
 	padding: var(--gutter);
@@ -165,8 +172,7 @@ picture {
 	display: block;
 }
 
-img,
-svg {
+img, svg {
 	display: block;
 	width: 100%;
 	height: auto;
