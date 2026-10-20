@@ -3,14 +3,52 @@
 	<head>
 		<title>My Layout Garden</title>
 		<meta name="description" content="Tahir's 6billion layout creations">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main2.png">
+		
+		<!-- specific to the layout garden -->
+		<link rel="stylesheet" href="/t6beverly-home/styles/styles.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/garden-modules.css">
+		<!-- font apis -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- no more londrina solid -->
+		<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link href="https://api.fontshare.com/v2/css?f[]=excon@1&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="site-header">
+			<a href="#" class="visually-hidden">Skip to content</a>
+			
+			<!-- nav	 -->
+			<nav class="menu">
+				<ul>
+					<li class="nav-item">
+						<a class="logo" href="/t6beverly-home">
+							<picture>
+								<img src="https://blob.gifcities.org/gifcities/BCVB2QYIVL5IETQEATAADXNLDUBVHSNL.gif" alt="skeleton marching">						
+							</picture>
+						</a>
+					</li>
+					<!-- this should be a drop down to see the other favorites versions -->
+					<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/about">about</a></li>
+					<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/projects">projects</a></li>
+					<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/layout-garden">layout garden</a></li>
+					<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/contact">contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- specific to layout garden -->
-		<link rel="stylesheet" href="/t6beverly-home/styles/garden-modules.css">
+		<inner-column>
+			<section class="landing">
+				<h1 class="title">The Layout Garden</h1>
+				<p class="calm-voice">Contains Tahir's 6billion layout creations</p>
+			</section>
+		</inner-column>	
 
-		<!-- site header -->
-		<?php include('../../site-head.php')?>	
-
-		<main class="page-content alt">
+		<main class="page-content">
 			<!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
 			<section class="page-section">
 				<inner-column><?php include('modules/pixartprinting-footer.php')?></inner-column>

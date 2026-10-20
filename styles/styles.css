@@ -47,12 +47,12 @@ h2 + .quiet-voice {
 	min-height: 80vh;
 }
 
-.page-content:not(.alt) inner-column, .site-footer inner-column {
+inner-column {
 	display: block;
 	padding: var(--gutter);
 }
 
-.page-content:not(.alt) .page-section {
+.page-content .page-section {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gutter);
