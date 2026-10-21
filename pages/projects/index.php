@@ -14,8 +14,39 @@
 				</section>
 
 				<section class="page-section">
-					<ul class="stdlist">
-						<li class="calm-voice"></li>
+					<ul class="stdlist stylized">
+						<li>
+							<a href="favorites" target="_blank">
+								<h2 class="attention-voice">Favorite Things</h2>
+								<picture class="img-container">
+									<img src="" alt="">
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="horror-adventure" target="_blank">
+								<h2 class="attention-voice">Horror Adventure</h2>
+								<picture class="img-container">
+									<img src="" alt="">
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="research-destroy" target="_blank">
+								<h2 class="attention-voice">Research & Destroy</h2>
+								<picture class="img-container">
+									<img src="" alt="">
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="small-sprint" target="_blank">
+								<h2 class="attention-voice">Small Business Sprint: Busy B's Bookkeeping</h2>
+								<picture class="img-container">
+									<img src="" alt="">
+								</picture>
+							</a>	
+						</li>
 					</ul>
 
 					<a href="archive" class="direction-voice" style="color: gray">Archive</a>
