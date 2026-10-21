@@ -1,4 +1,14 @@
-* { box-sizing: border-box; }
+@import '/t6beverly-home/styles/reset.css';
+
+@font-face {
+	font-family: "215000E";
+	src: url("../assets/fonts/215000E.ttf") format("truetype");
+}
+
+/* setup */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	--tiny-gutter: 5px;
@@ -45,11 +55,6 @@ body {
 	line-height: 1.25;
 }
 
-/* link reset */
-a {
-	text-decoration: none;
-}
-
 /* responsive images */
 picture {
 	display: block;
@@ -67,10 +72,79 @@ svg {
 	height: auto;
 }
 
-
-
-.landing {
-	padding: var(--gutter);
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
+
+/* nav styles */
+.site-header {
+	background-color: black;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	box-shadow: 0 1px 0 white;
+
+	nav.menu ul {
+		display: flex;
+		flex-direction: column;
+		@container (min-width: 750px) {
+			display: grid;
+			grid-template-columns: repeat(4, auto) 1fr;
+			gap: 0;
+		}
+	}
+
+	nav.menu a {
+		color: white;
+		padding: var(--small-gutter);
+
+		&:hover {
+			background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+			color: black;
+		}
+
+		@container (min-width: 750px) {
+			padding: var(--small-gutter) calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2);
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			width: fit-content;
+
+			&:hover {
+				background-image: none;
+				background-color: white;
+			}
+		}
+	}
+
+	.logo picture {
+		max-width: 60px;
+	}
+
+	a {
+		display:block;
+	}
+	
+	.direction-voice {
+		font-family: "Rubik", sans-serif;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			font-family: "215000E", sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+}
+
 
 

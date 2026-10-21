@@ -6,7 +6,7 @@
 		<div class="quiet-voice">
 			In
 			<picture class="conjuring-logo">
-			<img src="../assets/images/The_Conjuring_logo.svg" alt="The Conjuring">
+			<img src="../../assets/images/The_Conjuring_logo.svg" alt="The Conjuring">
 			</picture>
 			Universe
 		</div>

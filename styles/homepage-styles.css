@@ -31,7 +31,7 @@
 	.categories {
 		display: flex;
 		flex-direction: column;
-		gap: var(--small-gutter);
+		gap: var(--gutter);
 	}
 
 	.lists-wrapper {
@@ -49,11 +49,20 @@
 			* {
 				color: contrast-color(white);
 			}
+			.sub-cat {
+				background-color: rgba(0,0,0,0.1);
+				padding: var(--small-gutter);
+			}
 		}
+
 		&:nth-child(odd) {
 			background-color: black;
 			* {
 				color: contrast-color(black);
+			}
+			.sub-cat {
+				background-color: rgba(255,255,255,0.1);
+				padding: var(--small-gutter);
 			}
 			.direction-voice:hover {
 				color: rgb(243 185 39);

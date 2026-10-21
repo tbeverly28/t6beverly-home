@@ -8,7 +8,7 @@
 		<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main2.png">
 		
 		<!-- specific to the layout garden -->
-		<link rel="stylesheet" href="/t6beverly-home/styles/styles.css">
+		<!-- <link rel="stylesheet" href="/t6beverly-home/styles/styles.css"> -->
 		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="styles/garden-modules.css">
 		<!-- font apis -->
@@ -48,7 +48,7 @@
 			</section>
 		</inner-column>	
 
-		<main class="page-content">
+		<main class="page-content alt">
 			<!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
 			<section class="page-section">
 				<inner-column><?php include('modules/pixartprinting-footer.php')?></inner-column>

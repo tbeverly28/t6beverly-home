@@ -15,7 +15,7 @@
 				<?php include('resume.php')?>
 
 				<h2 class="loud-voice">Journal</h2>
-				<p class="calm-voice">Check out my substack: 
+				<p class="calm-voice">Want to see more? Check out my substack: 
 					<a href="https://wesandersonfan.substack.com/" class="direction-voice" target="_blank">Here</a>
 				</p>
 			</inner-column>

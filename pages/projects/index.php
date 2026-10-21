@@ -6,7 +6,7 @@
 
 		<?php include('../../site-head.php')?>
 		
-		<main class="page-content">
+		<main class="page-content projects">
 			<inner-column>
 				<section class="landing">
 					<h1 class="title">Projects</h1>
@@ -14,40 +14,34 @@
 				</section>
 
 				<section class="page-section">
-					<ul class="stdlist stylized">
-						<li>
-							<a href="favorites" target="_blank">
-								<h2 class="attention-voice">Favorite Things</h2>
-								<picture class="img-container">
-									<img src="" alt="">
-								</picture>
-							</a>
-						</li>
-						<li>
-							<a href="horror-adventure" target="_blank">
-								<h2 class="attention-voice">Horror Adventure</h2>
-								<picture class="img-container">
-									<img src="" alt="">
-								</picture>
-							</a>
-						</li>
-						<li>
-							<a href="research-destroy" target="_blank">
-								<h2 class="attention-voice">Research & Destroy</h2>
-								<picture class="img-container">
-									<img src="" alt="">
-								</picture>
-							</a>
-						</li>
-						<li>
-							<a href="small-sprint" target="_blank">
-								<h2 class="attention-voice">Small Business Sprint: Busy B's Bookkeeping</h2>
-								<picture class="img-container">
-									<img src="" alt="">
-								</picture>
-							</a>	
-						</li>
-					</ul>
+					<div class="stdlist-wrapper">
+						<ul class="stdlist stylized">
+							<li>
+								<a href="favorites" target="_blank">
+									<h2 class="attention-voice">Favorite Things</h2>
+									<picture class="img-container">
+										<img src="../../assets/images/meta-share/main2.png" alt="">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="horror-adventure" target="_blank">
+									<h2 class="attention-voice">Horror Adventure</h2>
+									<picture class="img-container">
+										<img src="../../assets/images/meta-share/horror.png" alt="">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="small-sprint/busy-b-bookkeeping" target="_blank">
+									<h2 class="attention-voice">Small Business Sprint: Busy B's Bookkeeping</h2>
+									<picture class="img-container">
+										<img src="../../assets/images/meta-share/main.png" alt="">
+									</picture>
+								</a>	
+							</li>
+						</ul>
+					</div>
 
 					<a href="archive" class="direction-voice" style="color: gray">Archive</a>
 				</section>
