@@ -41,77 +41,80 @@
 			</nav>
 		</header>
 
-		<inner-column>
-			<section class="landing">
-				<h1 class="title">The Layout Garden</h1>
-				<p class="calm-voice">Contains Tahir's 6billion layout creations</p>
-			</section>
-		</inner-column>	
+		<section class="landing">
+			<h1 class="title">The Layout Garden</h1>
+			<p class="calm-voice">Contains Tahir's 6billion layout creations</p>
+		</section>	
 
 		<main class="page-content alt">
 			<!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
 			<section class="page-section">
-				<inner-column><?php include('modules/pixartprinting-footer.php')?></inner-column>
+				<?php include('modules/pixartprinting-footer.php')?>	
 			</section>
 
 			<!-- Coolors Palette Generator | Layout 2 - 10/8/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/coolors-palette-gen.php')?></inner-column>
+			 	<?php include('modules/coolors-palette-gen.php')?>	
 			</section>
 
 			<!-- Lorain Colors Substance Article | Layout 3 - 10/9/26 -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/loraincolors-hero.php')?></inner-column>
+			 	<?php include('modules/loraincolors-hero.php')?>	
 			</section>
 
 			<!-- ZDNET Nav bar | Layout 4 - 10/11/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/zdnet-nav.php')?></inner-column>
+			 	<?php include('modules/zdnet-nav.php')?>	
 			</section>
 
 			<!-- MyAnimeList new footer | Layout 5 - 10/12/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/myanimelist-footer.php')?></inner-column>
+			 	<?php include('modules/myanimelist-footer.php')?>	
 			</section>
 
 			<!-- Roadmap.sh community tab | Layout 6 - 10/12/26 -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/roadmapsh-community.php')?></inner-column>
+			 	<?php include('modules/roadmapsh-community.php')?>	
 			</section>
 
 			<!-- Leetcode module progress | Layout 7 - 10/13/26 (additional features possible), will likely be a group of mini modules in a flex-row -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/leetcode-progress.php')?></inner-column>
+			 	<?php include('modules/leetcode-progress.php')?>	
 			</section>
 
 			<!-- Sabukaru header | Layout 8 - 10/13/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/sabukaru-header.php')?></inner-column>
+			 	<?php include('modules/sabukaru-header.php')?>	
 			</section>
 
 			<!-- Fontshare nav | Layout 9 - 10/13/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/fontshare-nav.php')?></inner-column>
+			 	<?php include('modules/fontshare-nav.php')?>	
 			</section>
 
 			<!-- Meletrix keyboards | Layout 10 - 10/13/26 -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/meletrix-keyboards.php')?></inner-column>
+			 	<?php include('modules/meletrix-keyboards.php')?>	
 			</section>
 
 			<!-- Settings panels: cobalt.tools, Minecraft, Metal Gear Solid 2, Trader Joe's | Layouts 11-14 10/14/26 (additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/settings-panels.php')?></inner-column>
+			 	<?php include('modules/settings-panels.php')?>	
 			</section>
 
 			<!-- The Nun (2018) poster  | Layout 15 - 10/15/26 (needs work, additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/the-nun.php')?></inner-column>
+			 	<?php include('modules/the-nun.php')?>	
 			</section>
 
 			<!-- Comico Blimp w/ Hype page | Layout 16, 17 - 10/15/26 (needs work, additional features possible) -->
 			<section class="page-section">
-			 	<inner-column><?php include('modules/comico-blimp.php')?></inner-column>
+			 	<?php include('modules/comico-blimp.php')?>	
+			</section>
+
+			<!-- Veggies Flier | Layout 18 -->
+			<section class="page-section">
+			 	<?php include('modules/veggies-flier.php')?>	
 			</section>
 		</main>
 

@@ -20,6 +20,13 @@ body {
 	container-type: inline-size;
 }
 
+/*children who should not stretch the whole width of the viewport*/
+inner-column {
+	display: block;
+	max-width: 960px;
+	margin-inline: auto;
+}
+
 /* text styles */
 .title {
 	font-size: 4em;
@@ -131,7 +138,7 @@ svg {
 	a {
 		display:block;
 	}
-	
+
 	.direction-voice {
 		font-family: "Rubik", sans-serif;
 		text-decoration: none;
@@ -146,5 +153,7 @@ svg {
 	}
 }
 
-
+.landing {
+	padding: var(--gutter);
+}
 
