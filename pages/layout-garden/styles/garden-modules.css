@@ -1982,3 +1982,337 @@ Pixelify Sans: pixel (techno?)
 		}
 	}
 }
+
+/* Devil May Cry Gameinformer article (2013) | Layout 19 - 10/24/26 (needs work)*/
+.dmc-gameinformer {
+	--gi-green: #75ac2d;
+	
+	/*structure*/
+	display: flex;
+	flex-direction: column;
+	padding: var(--small-gutter);
+	gap: var(--gutter);
+
+	.article-header, .review, .extra {
+		display: flex;
+		flex-direction: column;
+		gap: var(--small-gutter);
+	}
+
+	.article-header {
+		border-bottom: 1px solid silver;
+		padding-bottom: var(--tiny-gutter);
+	}
+
+	.data li, .criteria li {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.badges {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		gap: var(--gutter);
+	}
+
+	/*text*/
+	.subtitle, 
+	.data .direction-voice, 
+	.data-2 .loud-voice, 
+	.criteria h4.direction-voice,
+	.content .one::first-letter, 
+	.extra h3.attention-voice
+	 {
+		color: var(--gi-green);
+	}
+
+	.title {
+		font-family: "Inter", sans-serif;
+		font-weight: 200;
+		display: flex;
+		flex-direction: column;
+		gap: var(--small-gutter);
+		margin-bottom: 0;
+	}
+
+	.subtitle {
+		font-size: 0.3em;
+		font-weight: 400;
+	}
+
+	.direction-voice, .extra .attention-voice {
+		font-family: "Space Grotesk", sans-serif;
+		font-weight: 600;
+	}
+
+	.attention-voice {
+		font-family: "Space Grotesk", sans-serif;
+		font-size: 20px;
+	}
+
+	.calm-voice {
+		font-family: "Inter", sans-serif;
+		font-weight: 400;
+	}
+
+	.quiet-voice {
+		font-family: "Space Grotesk", sans-serif;
+		line-height: 1.5;
+	}
+
+	
+
+	.data-2 {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+		text-align: end;
+
+		.loud-voice {
+			font-family: "Space Grotesk",sans-serif;
+			font-weight: 700;
+			grid-column: 2;
+			grid-row: 1 / 2;
+			padding: var(--small-gutter);
+			margin-left: 30px;
+		}
+
+		.calm-voice {
+			color: dimgray;
+			grid-column: span 2;
+			grid-row: 2 / 3;
+		}
+	}
+
+	.criteria .quiet-voice {
+		text-align: end;
+	}
+
+	/*https://developer.chrome.com/blog/control-your-drop-caps-with-css-initial-letter*/
+	.content .one::first-letter {
+		initial-letter: 3 3;
+		padding-right: 0.5em;
+		font-weight: 300;
+	}
+
+	.content p:not(.one) {
+		text-indent: 3em;
+	}
+
+	
+	/*images*/
+	.badge-container {
+		height: 100%;
+		max-width: 200px;
+		img {
+			height: 100%;
+		}
+	}
+
+	.data-2 .img-container {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	svg.mesh {
+		height: 70px;
+		.stripe path {
+			stroke: silver;
+			stroke-width: 3px;
+		}
+		rect {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.content .img-container {
+		padding: var(--small-gutter) 0;
+	}
+
+	/*queries*/
+	@container (min-width: 420px) {
+		.badges {
+			grid-template-columns: auto 1fr;
+		}
+	}
+
+	@container (min-width: 600px) {
+		.article-header {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: var(--gutter);
+		}
+
+		.badges {
+			grid-template-columns: 1fr;
+		}
+
+		.badge-container {
+			max-width: 25vw;
+		}
+
+		.title {
+			grid-column: span 2;
+		}
+
+		.badges {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.data {
+			grid-column: 2;
+			grid-row: 2;
+		}
+	}
+
+	@container (min-width: 1100px) {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		padding-top: var(--small-gutter);
+		padding-right: var(--small-gutter);
+
+		aside {
+			max-width: 18vw;
+		}
+
+		.article-header {
+			grid-column: 2;
+			grid-row: 1;
+			grid-template-columns: auto 1fr;
+		}
+
+		.review {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.content {
+			grid-column: 2;
+			grid-row: 2 / 4;
+		}
+
+		.extra {
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		.criteria {
+			display: flex;
+			flex-direction: column;
+			gap: var(--small-gutter);
+		}
+
+		.criteria li {
+			flex-direction: column;
+			align-items: flex-end;
+		}
+
+		.quiet-voice {
+			max-width: 23ch;
+		}
+	}
+
+	@container (min-width: 1550px) {
+		gap: 30px;
+
+		.calm-voice {
+			max-width: 41ch;
+		}
+
+		.badges {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.badge-container {
+			max-width: 200px;
+		}
+
+		.data {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			gap: var(--small-gutter);
+		}
+
+		.data li {
+			justify-content: flex-start;
+			gap: var(--tiny-gutter);
+		}	
+
+		.content {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: var(--small-gutter) 30px;
+
+			.text-wrapper {
+				grid-column: 1;
+				grid-row: span 5;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}	
+
+			.img-container.one {
+				grid-column: 2 / 4;
+				grid-row: 1;
+				padding: 0;			
+			}
+
+			.img-container.two {
+				grid-column: 2 / 4;
+				grid-row: 2;
+				padding: 0;
+				padding-top: var(--small-gutter);
+			}
+
+			p.six {
+				grid-column: 2;
+				grid-row: 3;
+			}
+			p.seven {
+				grid-column: 2;
+				grid-row: 4;
+			}
+			p.eight {
+				grid-column: 3;
+				grid-row: 3;
+			}
+			p.nine {
+				grid-column: 3;
+				grid-row: 4;
+			}
+		}
+
+		.extra {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-rows: auto 1fr;
+
+			.img-container {
+				grid-column: 1;
+				grid-row: 1 / 3;
+			}
+
+			svg.mesh {
+				width: 70px;
+				height: 100%;	
+			}
+
+			h3 {
+				grid-column: 2;
+				grid-row: 1;
+			}
+
+			p {
+				grid-column: 2;
+				grid-row: 2;
+			}
+		}
+	}
+}

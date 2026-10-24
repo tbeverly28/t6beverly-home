@@ -36,7 +36,7 @@
 								<a href="small-sprint/busy-b-bookkeeping" target="_blank">
 									<h2 class="attention-voice">Small Business Sprint: Busy B's Bookkeeping</h2>
 									<picture class="img-container">
-										<img src="../../assets/images/meta-share/main.png" alt="">
+										<img src="../../assets/images/meta-share/busyb.png" alt="">
 									</picture>
 								</a>	
 							</li>

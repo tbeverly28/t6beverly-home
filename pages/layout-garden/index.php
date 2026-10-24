@@ -48,74 +48,49 @@
 
 		<main class="page-content alt">
 			<!-- Pixartprinting Footer | Layout 1 - 10/7/26 -->
-			<section class="page-section">
-				<?php include('modules/pixartprinting-footer.php')?>	
-			</section>
+			<?php include('modules/pixartprinting-footer.php')?>
 
 			<!-- Coolors Palette Generator | Layout 2 - 10/8/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/coolors-palette-gen.php')?>	
-			</section>
+			 <?php include('modules/coolors-palette-gen.php')?>
 
 			<!-- Lorain Colors Substance Article | Layout 3 - 10/9/26 -->
-			<section class="page-section">
-			 	<?php include('modules/loraincolors-hero.php')?>	
-			</section>
+			 <?php include('modules/loraincolors-hero.php')?>
 
 			<!-- ZDNET Nav bar | Layout 4 - 10/11/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/zdnet-nav.php')?>	
-			</section>
+			 <?php include('modules/zdnet-nav.php')?>
 
 			<!-- MyAnimeList new footer | Layout 5 - 10/12/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/myanimelist-footer.php')?>	
-			</section>
+			 <?php include('modules/myanimelist-footer.php')?>
 
 			<!-- Roadmap.sh community tab | Layout 6 - 10/12/26 -->
-			<section class="page-section">
-			 	<?php include('modules/roadmapsh-community.php')?>	
-			</section>
+			 <?php include('modules/roadmapsh-community.php')?>
 
 			<!-- Leetcode module progress | Layout 7 - 10/13/26 (additional features possible), will likely be a group of mini modules in a flex-row -->
-			<section class="page-section">
-			 	<?php include('modules/leetcode-progress.php')?>	
-			</section>
+			 <?php include('modules/leetcode-progress.php')?>
 
 			<!-- Sabukaru header | Layout 8 - 10/13/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/sabukaru-header.php')?>	
-			</section>
+			 <?php include('modules/sabukaru-header.php')?>
 
 			<!-- Fontshare nav | Layout 9 - 10/13/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/fontshare-nav.php')?>	
-			</section>
+			 <?php include('modules/fontshare-nav.php')?>
 
 			<!-- Meletrix keyboards | Layout 10 - 10/13/26 -->
-			<section class="page-section">
-			 	<?php include('modules/meletrix-keyboards.php')?>	
-			</section>
+			 <?php include('modules/meletrix-keyboards.php')?>
 
 			<!-- Settings panels: cobalt.tools, Minecraft, Metal Gear Solid 2, Trader Joe's | Layouts 11-14 10/14/26 (additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/settings-panels.php')?>	
-			</section>
+			 <?php include('modules/settings-panels.php')?>
 
 			<!-- The Nun (2018) poster  | Layout 15 - 10/15/26 (needs work, additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/the-nun.php')?>	
-			</section>
+			 <?php include('modules/the-nun.php')?>
 
 			<!-- Comico Blimp w/ Hype page | Layout 16, 17 - 10/15/26 (needs work, additional features possible) -->
-			<section class="page-section">
-			 	<?php include('modules/comico-blimp.php')?>	
-			</section>
+			 <?php include('modules/comico-blimp.php')?>
 
-			<!-- Veggies Flier | Layout 18 -->
-			<section class="page-section">
-			 	<?php include('modules/veggies-flier.php')?>	
-			</section>
+			<!-- Veggies Flier | Layout 18 - 10/23/26 -->
+			 <?php include('modules/veggies-flier.php')?>
+
+			 <!-- Devil May Cry Gameinformer article (2013) | Layout 19 - 10/24/26 (needs work) -->
+			 <?php include('modules/dmc-gameinformer.php')?>
 		</main>
 
 	 	<?php include('../../site-footer.php'); ?>
