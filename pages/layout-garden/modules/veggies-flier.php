@@ -1,5 +1,5 @@
 <section class="veggies-flier">
-	<inner-column>
+	<inner-column class="medium">
 		<picture class="title-container">
 			<!-- translate to thanksgiving sale? -->
 			<title>感謝祭</title>

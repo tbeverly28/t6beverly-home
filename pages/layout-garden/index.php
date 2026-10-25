@@ -91,6 +91,9 @@
 
 			 <!-- Devil May Cry Gameinformer article (2013) | Layout 19 - 10/24/26 (needs work) -->
 			 <?php include('modules/dmc-gameinformer.php')?>
+
+			 <!-- Criterion - Possession (1981) | Layout 20 - 10/24/26 -->
+			 <?php include('modules/criterion-possession.php')?>
 		</main>
 
 	 	<?php include('../../site-footer.php'); ?>

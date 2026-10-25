@@ -23,8 +23,14 @@ body {
 /*children who should not stretch the whole width of the viewport*/
 inner-column {
 	display: block;
-	max-width: 960px;
 	margin-inline: auto;
+	&.medium {
+		max-width: 960px;
+	}
+
+	&.large {
+		max-width: 1900px;
+	}
 }
 
 /* text styles */
