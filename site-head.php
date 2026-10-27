@@ -1,10 +1,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main2.png">
+	<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main3.png">
 	
 	<!-- styles -->
-	<link rel="stylesheet" href="/t6beverly-home/styles/styles.css">
-	<link rel="stylesheet" href="/t6beverly-home/styles/homepage-styles.css">
+	<link rel="stylesheet" href="/t6beverly/styles/styles.css">
+	<link rel="stylesheet" href="/t6beverly/styles/homepage-styles.css">
 	<!-- font apis -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
