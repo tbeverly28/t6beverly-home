@@ -20,17 +20,17 @@
 		<nav class="menu">
 			<ul>
 				<li class="nav-item">
-					<a class="logo" href="/t6beverly-home">
+					<a class="logo" href="/t6beverly">
 						<picture>
 							<img src="https://blob.gifcities.org/gifcities/BCVB2QYIVL5IETQEATAADXNLDUBVHSNL.gif" alt="skeleton marching">						
 						</picture>
 					</a>
 				</li>
 				<!-- this should be a drop down to see the other favorites versions -->
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/about">about</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/projects">projects</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/layout-garden">layout garden</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly-home/pages/contact">contact</a></li>
+				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/about">about</a></li>
+				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/projects">projects</a></li>
+				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/layout-garden">layout garden</a></li>
+				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/contact">contact</a></li>
 			</ul>
 		</nav>
 	</header>
