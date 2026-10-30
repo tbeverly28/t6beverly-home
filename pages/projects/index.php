@@ -40,6 +40,14 @@
 									</picture>
 								</a>	
 							</li>
+							<li>
+								<a href="research-destroy" target="_blank">
+									<h2 class="attention-voice">Research & Destroy 100%</h2>
+									<picture class="img-container">
+										<img src="../../assets/images/meta-share/randd.png" alt="">
+									</picture>
+								</a>	
+							</li>
 						</ul>
 					</div>
 
