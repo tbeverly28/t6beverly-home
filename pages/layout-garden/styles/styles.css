@@ -56,15 +56,26 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: var(--large-gutter);
-	background-color: rgb(243 185 39);
+	background-color: #9e3f4a;
 
-	/*DONT FORGET DARK MODE PREFERENCE ALTERATION: probably on individual layouts*/
 	> section {
 		background-color: var(--fill-secondary);
 	}
 }
 
 
+@media (prefers-color-scheme: dark) {
+	/* dark mode alterations on specific layouts */
+	body > section:not(.layout-4, .layout-5) {
+		--fill-primary: white;
+		--fill-secondary: var(--darthvaderBlack);
+		--ink-primary: white;
+		--ink-secondary: silver;
+		--ink-alternate: var(--darthvaderBlack);
+		--accent-primary: var(--horseradish);
+		--accent-tertiary: var(--shaleBrown);
+	}			
+}
 
 inner-column {
 	display: block;
@@ -168,19 +179,19 @@ a {
 .portrait-img {
 	aspect-ratio: 16 / 22;
 	background-image: url('https://peprojects.dev/images/portrait.jpg');
-	background-color: var(--accent-primary);
+	background-color: var(--shaleBrown);
 }
 
 .landscape-img {
 	aspect-ratio: 16 / 9;
 	background-image: url('https://peprojects.dev/images/landscape.jpg');
-	background-color: var(--accent-secondary);
+	background-color: var(--portabelloBrown);
 }
 
 .square-img {
 	aspect-ratio: 1;
 	background-image: url('https://peprojects.dev/images/square.jpg');
-	background-color: var(--accent-tertiary);
+	background-color: var(--horseradish);
 }
 
 .headings {
@@ -194,7 +205,7 @@ a {
 	color: var(--ink-alternate);
 	padding: 7px 25px;
 	width: 100%;
-	transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
 	&.bordered {
 		background-color: transparent;
@@ -204,12 +215,14 @@ a {
 		&:hover {
 			background-color: var(--fill-primary);
 			color: var(--ink-alternate);
+			box-shadow: none;
 		}
 	}
 
 	&:hover {
 		background-color: var(--fill-secondary);
 		color: var(--ink-primary);
+		box-shadow: 0 0 5px var(--fill-primary);
 	}
 }
 
@@ -281,15 +294,15 @@ a {
 .icon {
 	width: 24px;
 	height: 24px;
-	fill: currentColor;
+	fill: var(--fill-primary);
 
 	&.large {
 		width: 80px;
 		height: 80px;
 	}
 
-	path {
-		fill: currentColor;
+	path, circle, rect {
+		fill: var(--fill-primary);
 	}
 }
 
@@ -317,8 +330,16 @@ a {
 	}
 
 	a.attention-voice {
-		width: 100%;
-		text-align: center;
+		justify-self: center;
+
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+	}
+
+	.link:not(.direction-voice):hover {
+		opacity: 0.8;
 	}
 
 	@container (min-width: 700px) {
@@ -355,11 +376,11 @@ a {
 .link {
 	color: var(--accent-secondary);
 	fill: var(--accent-secondary);
-	transition: mix-blend-mode 0.4s ease-in-out;
+	transition: color 0.4s ease, text-decoration 0.4s ease;
 
 	&:hover {
-		/*color: var(--accent-primary);*/
-		mix-blend-mode: soft-light;
+		color: var(--accent-primary);
+		text-decoration: 2px currentColor underline;
 	}
 }
 
