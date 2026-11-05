@@ -1,0 +1,164 @@
+@import '/t6beverly/styles/reset.css';
+
+@font-face {
+	font-family: "215000E";
+	src: url("/t6beverly/assets/fonts/215000E.ttf") format("truetype");
+}
+
+/* setup */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	--tiny-gutter: 5px;
+	--small-gutter: 10px;
+	--gutter: 20px;
+
+	font-size: 16px;
+	font-family: Tahoma, sans-serif;
+	container-type: inline-size;
+}
+
+/*children who should not stretch the whole width of the viewport*/
+inner-column {
+	display: block;
+	margin-inline: auto;
+	&.medium {
+		max-width: 960px;
+	}
+
+	&.large {
+		max-width: 1900px;
+	}
+}
+
+/* text styles */
+.title {
+	font-size: 4em;
+	font-weight: 700;
+}
+
+.loud-voice {
+	font-size: 3em;
+	text-wrap: pretty;
+}
+
+.attention-voice {
+	font-size: 2em;
+	text-wrap: pretty;
+}
+
+.direction-voice {
+	font-size: 1em;
+	text-wrap: pretty;
+	line-height: 1.5;
+}
+
+.calm-voice {
+	font-size: 1em;
+	text-wrap: pretty;
+	line-height: 1.5;
+}
+
+.quiet-voice {
+	font-size: 14px;
+	text-wrap: pretty;
+	line-height: 1.25;
+}
+
+/* responsive images */
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* nav styles */
+.site-header {
+	background-color: black;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	box-shadow: 0 1px 0 white;
+
+	nav.menu ul {
+		display: flex;
+		flex-direction: column;
+		@container (min-width: 750px) {
+			display: grid;
+			grid-template-columns: repeat(4, auto) 1fr;
+			gap: 0;
+		}
+	}
+
+	nav.menu a {
+		color: white;
+		padding: var(--small-gutter);
+
+		&:hover {
+			background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+			color: black;
+		}
+
+		@container (min-width: 750px) {
+			padding: var(--small-gutter) calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2);
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			width: fit-content;
+
+			&:hover {
+				background-image: none;
+				background-color: white;
+			}
+		}
+	}
+
+	.logo picture {
+		max-width: 60px;
+	}
+
+	a {
+		display:block;
+	}
+
+	.direction-voice {
+		font-family: "Rubik", sans-serif;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			font-family: "215000E", sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.landing {
+	padding: var(--gutter);
+}
+
