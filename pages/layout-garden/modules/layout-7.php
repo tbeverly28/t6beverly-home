@@ -6,7 +6,7 @@
 
 		<ul class="display-selector">
 			<li>
-				<button>
+				<button aria-label="display selector 1">
 					<picture class="img-container landscape-img">
 						<img src="" alt="">
 					</picture>
@@ -17,7 +17,7 @@
 				</button>
 			</li>
 			<li>
-				<button>
+				<button aria-label="display selector 2">
 					<picture class="img-container landscape-img">
 						<img src="" alt="">
 					</picture>
@@ -28,7 +28,7 @@
 				</button>
 			</li>
 			<li>
-				<button>
+				<button aria-label="display selector 3">
 					<picture class="img-container landscape-img">
 						<img src="" alt="">
 					</picture>
@@ -39,7 +39,7 @@
 				</button>
 			</li>
 			<li>
-				<button>
+				<button aria-label="display selector 4">
 					<picture class="img-container landscape-img">
 						<img src="" alt="">
 					</picture>
@@ -68,5 +68,5 @@
 		</strong>
 	</text-wrapper>
 	
-	<button class="standard-button direction-voice">Button</button>
+	<button class="standard-button direction-voice" aria-label="confirmation button">Button</button>
 </section>

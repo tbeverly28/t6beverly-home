@@ -7,8 +7,9 @@
 
 		<p class="calm-voice">Rename figma test accessibility persona figma css javascript. Onboarding team organization frame librarysync file flows white space properties, handoff beta ui componentization.</p>
 
-		<button class="standard-button bordered direction-voice">Button</button>
-		<button class="standard-button direction-voice">Button</button>
+		<!-- should be an input -->
+		<button class="standard-button bordered direction-voice" aria-label="input button">Button</button>
+		<button class="standard-button direction-voice" aria-label="confirmation">Button</button>
 
 		<p class="quiet-voice">Code connect refactor main onboarding; ai figma figma palette.</p>
 	</inner-column>
