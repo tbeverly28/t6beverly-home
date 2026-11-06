@@ -1,4 +1,4 @@
-<section class="layout-10">
+<section aria-label="Layout Ten" class="layout-10">
 	<!-- empty divs for visual effect 
 	https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden-->
 	<div class="empty-item" aria-hidden="true"></div>

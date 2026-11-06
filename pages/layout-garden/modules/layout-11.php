@@ -1,4 +1,4 @@
-<section class="layout-11">
+<section aria-label="Layout Eleven" class="layout-11">
 	<inner-column class="medium">
 		<?php include('components/onelink-nav.php')?>
 

@@ -1,4 +1,4 @@
-<section class="layout-4">
+<section aria-label="Layout Four" class="layout-4">
 	<?php include('components/even-nav.php')?>
 
 	<picture class="img-container landscape-img">

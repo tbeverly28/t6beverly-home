@@ -1,4 +1,4 @@
-<section class="layout-5">
+<section aria-label="Layout Five" class="layout-5">
 	<h1 class="title">SuperLongTitle</h1>
 
 	<section class="card-group1">

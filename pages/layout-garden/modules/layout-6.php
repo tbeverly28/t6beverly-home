@@ -1,4 +1,4 @@
-<section class="layout-6">
+<section aria-label="Layout Six" class="layout-6">
 	<h4 class="direction-voice">Subheading</h4>
 
 	<div class="headings">

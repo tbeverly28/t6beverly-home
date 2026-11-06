@@ -1,4 +1,4 @@
-<section class="layout-1">
+<section aria-label="Layout One" class="layout-1">
 	<inner-column class="small">
 		<div class="button-grid">
 			<h2 class="loud-voice">Header</h2>

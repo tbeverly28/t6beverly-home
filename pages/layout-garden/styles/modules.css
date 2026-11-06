@@ -170,9 +170,8 @@
 	}
 }
 
-/* HAVE TO REWORK ENTIRE STRUCTURE */
+/* preferably the image should extend outside the subgrid to the outer grid */
 .layout-5 {
-	border: 3px solid orange;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-top: var(--small-gutter);
@@ -288,7 +287,7 @@
 		.card-group1 {
 			grid-column: 2 / 4;
 			padding: var(--huge-gutter);
-			border-right: 100px solid var(--accent-primary);
+			border-right: var(--huge-gutter) solid var(--accent-primary);
 			background-color: var(--fill-secondary);
 
 			.landscape-img {
@@ -312,6 +311,8 @@
 			grid-template-columns: subgrid;
 			grid-template-rows: auto 1fr;
 			padding: var(--huge-gutter);
+			padding-left: 0;
+			gap: var(--large-gutter);
 
 			h2 {
 				grid-column: 1;
@@ -323,6 +324,7 @@
 				grid-column: 1;
 				grid-row: 2;
 				width: fit-content;
+				height: fit-content;
 			}
 
 			.card-grid { 
@@ -362,6 +364,12 @@
 			display: block;
 			grid-column: 2 / 4;
 			border: none;
+		}
+		.card-group2 {
+			padding-left: var(--huge-gutter);
+		}
+		.card-group1 .card {
+			padding: var(--large-gutter) var(--gutter) var(--large-gutter) 0;
 		}
 	}
 }
@@ -446,6 +454,8 @@
 		.portrait-img {
 			grid-column: 2;
 			grid-row: 2 / 6;
+			aspect-ratio: auto;
+			background-position: center;
 		}
 	}
 }
@@ -846,6 +856,6 @@
 	}
 }
 
-body > section:not(.layout-5) {
+/*body > section:not(.layout-5) {
 	display: none;
-}
+}*/

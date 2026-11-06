@@ -1,4 +1,4 @@
-<section class="layout-7">
+<section aria-label="Layout Seven" class="layout-7">
 	<div class="item-display">
 		<picture class="img-container landscape-img main-display">
 			<img src="" alt="">

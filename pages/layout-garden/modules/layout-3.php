@@ -1,4 +1,4 @@
-<section class="layout-3">
+<section aria-label="Layout Three" class="layout-3">
 	<inner-column class="large">
 		<h2 class="loud-voice">Header</h2>
 		

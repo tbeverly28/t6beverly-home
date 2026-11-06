@@ -1,4 +1,4 @@
-<section class="layout-8">
+<section aria-label="Layout Eight" class="layout-8">
 
 	<div class="text">
 		<h2 class="direction-voice">Heading</h2>
