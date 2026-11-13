@@ -34,6 +34,7 @@
 						<li><a href="index-v2.html" class="direction-voice" target="_blank">Index v2</a></li>
 						<li><a href="linkedv1/welcome.html" class="direction-voice" target="_blank">Linked Site</a></li>
 						<li><a href="https://codepen.io/Tahir-Beverly/pen/jEBqVKR" class="direction-voice" target="_blank">Research & Destroy</a></li>
+						<li><a href="research-employ" class="direction-voice" target="_blank">Research & Employ</a></li>
 						<li><a href="busy-b-bookkeeping-v1" class="direction-voice" target="_blank">Small Business Sprint: Busy B's Bookkeeping v1</a></li>
 						<li><a href="portal/web-portal-v1.html" class="direction-voice" target="_blank">Web Portal v1</a></li>
 						<li><a href="portal" class="direction-voice" target="_blank">Web Portal v2</a></li>		
