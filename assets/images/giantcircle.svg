@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 1969 1969">
+  <circle cx="984.375" cy="984.375" r="984.375" style="fill:url(#a)"/>
+  <defs>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="0" gradientTransform="rotate(90.0045 481.4184 481.6114)scale(1968.28539)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#a2cc7a;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#6a9e6e;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+</svg>

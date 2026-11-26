@@ -1,0 +1,145 @@
+/* article content */
+.article-content {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.article-section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gutter);
+
+	h2.attention-voice {
+		padding-bottom: var(--tiny-gutter);
+	}
+}
+
+/* article header */
+.article-header {
+	display: flex;
+	flex-direction: column;
+	gap: var(--small-gutter);
+
+	.article-meta {
+		display: flex;
+		gap: var(--tiny-gutter);
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	h1 {
+		padding-bottom: var(--large-gutter);
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* article footer */
+.article-footer {
+	.article-foot {
+		border-bottom: 1px solid silver;
+	}
+
+	.share {
+		justify-self: center;
+	}
+
+	profile-card {
+		padding-block: 60px var(--gutter);
+	}
+
+	.next-section {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: end;
+	}
+
+	.next {
+		display: flex;
+		gap: var(--small-gutter);
+		align-items: center;
+		padding-block: var(--gutter);
+
+		.icon {
+			width: 41px;
+			height: 41px;
+		}
+	}
+
+	h3.attention-voice {
+		font-size: 2rem;
+	}
+	.calm-voice {
+		max-width: 45ch;
+	}
+}
+
+/* related articles */
+.related-articles {
+	display: flex;
+	flex-direction: column;
+	gap: var(--large-gutter);
+	padding-top: 12vh;
+
+	h2.loud-voice {
+		padding-bottom: var(--gutter);
+		margin-bottom: var(--gutter);
+		border-bottom: 1px solid silver;
+	}
+
+	.article-preview {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		gap: var(--gutter);
+		cursor: pointer;
+
+		.thumbnail {
+			transition: opacity 0.2s ease;
+		}
+
+		.article-header strong, h3.attention-voice {
+			transition: color 0.2s ease;
+		}
+
+		&:hover {
+			.thumbnail { 
+				opacity: 0.6; 
+			}
+			.article-header strong, h3.attention-voice {
+				color: mediumorchid;
+			}
+		}
+	}
+}
+
+/*media queries*/
+@media (min-width: 777px) {
+	.related-articles {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* don't really need this since I specified thumbnail dimensions */
+		grid-auto-rows: auto;
+		gap: 0 var(--gutter);
+
+		h2 {
+			grid-column: span 2;
+			grid-row: 1;
+		}
+
+		.article-preview {
+			grid-row: 2;
+			display: grid;
+			/* this allows card previews to be aligned within each other so the height of hte heading increasing doesn't throw off the other card */
+			grid-template-rows: subgrid;
+			/* take up 4 rows of the parent within it's own grid */
+			grid-row: span 4;
+		}
+	}
+}

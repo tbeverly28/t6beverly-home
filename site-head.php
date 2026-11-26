@@ -1,36 +1,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main3.png">
 	
 	<!-- styles -->
 	<link rel="stylesheet" href="/t6beverly/styles/styles.css">
-	<link rel="stylesheet" href="/t6beverly/styles/homepage-styles.css">
 	<!-- font apis -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- no more londrina solid -->
-	<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-	<link href="https://api.fontshare.com/v2/css?f[]=excon@1&display=swap" rel="stylesheet">
+	<!-- DM Sans, Mono -->
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="site-header">
-		<a href="#" class="visually-hidden">Skip to content</a>
+		<a href="#page-content" class="skip-link direction-voice">Skip to content</a>
 		
-		<!-- nav	 -->
-		<nav class="menu">
+		<nav class="site-nav">
 			<ul>
-				<li class="nav-item">
-					<a class="logo" href="/t6beverly">
-						<picture>
-							<img src="https://blob.gifcities.org/gifcities/BCVB2QYIVL5IETQEATAADXNLDUBVHSNL.gif" alt="skeleton marching">						
+				<li>
+					<a class="logo block" href="/t6beverly">
+						<picture class="img-container">	
+							<img src="/t6beverly/assets/images/meta-share.png" alt="smile">
 						</picture>
 					</a>
 				</li>
-				<!-- this should be a drop down to see the other favorites versions -->
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/about">about</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/projects">projects</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/layout-garden">layout garden</a></li>
-				<li class="nav-item"><a class="direction-voice" href="/t6beverly/pages/contact">contact</a></li>
+
+				<li>
+					<ul class="menu">
+						<li aria-label="menu item 1">
+							<a class="direction-voice block" href="/t6beverly/about">About</a>
+						</li>
+
+						<li aria-label="menu item 2">
+							<a class="direction-voice block" href="/t6beverly/layout-garden">Layout Garden</a>
+						</li>
+
+						<li aria-label="menu item 3">
+							<a class="direction-voice block" href="/t6beverly/projects">Projects</a>
+						</li>
+
+						<li aria-label="link to footer menu" class="icon">
+							<a href="#footer-nav">
+								<svg class="icon" viewBox="0 0 24 24">
+									<path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</header>

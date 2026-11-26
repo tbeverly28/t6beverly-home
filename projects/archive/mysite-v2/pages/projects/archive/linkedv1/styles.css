@@ -1,0 +1,146 @@
+/*check out these colors later
+https://newsletter.abloomdecor.com/p/rustic-kitchen-inspired-color-palette
+#e4e0c2 	lightgray	(page-background)
+#c0a179 	tan 			(li)
+#967862 	coffee		(h3)
+#4a4142	(?)			(h2)
+#272329 	charcoal		(h1,body text)
+	alternate: swap charcoal w/lightgray
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+	color: saddlebrown;
+}
+
+/* container styles */
+body {
+	max-width: 960px;
+	margin-inline: auto;
+	padding: 0 22px 100px 22px;
+	background-color: linen;
+}
+
+.page-header {
+/* 	border: 3px solid blue; */
+	background-color: darkgreen;
+}
+
+.page-content section, .page-footer {
+	padding: 6px;
+}
+
+.menu {
+/* 	border: 3px solid salmon; */
+	padding: 12px;
+	vertical-align: middle;
+}
+
+/* link styles */
+.skip {
+	display: none;
+}
+
+a {
+   color: chocolate;
+}
+
+a:hover {
+   color: lightsalmon;
+}
+
+a:visited {
+   color: tan;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.menu a:hover {
+	color: lightsalmon;
+}
+
+
+/* list styles */
+.menu ul {
+	list-style-type: none;
+}
+
+.menu li {
+	display: inline;
+	padding-right: 18px;
+}
+
+.stdlist {
+	border: 3px solid white;
+	padding: 6px;
+	background-color: whitesmoke;
+	display: inline-block;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.stdlist li {
+	padding: 6px;
+	color: chocolate;
+}
+
+
+/* text styles */
+h1, h2, h3, p, .stdlist {
+	margin-top: 14px;
+}
+
+.landing h1 {
+	font-size: 96px;
+	color: darkgreen;
+}
+
+h2 {
+	font-size: 60px;
+	color: forestgreen;
+}
+
+h3 {
+	font-size: 36px;
+	color: green;
+	padding-bottom: 12px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+s {
+	color: darkred;
+}
+
+.fancy {
+	font-weight: 600;
+	text-decoration: underline;
+	/*cursor: copy;*/
+}
+
+/* img styles */
+.collage {
+	margin-top: 14px;
+}
+
+.img-container {
+  display: inline-block;
+  max-width: 294px;
+}
+
+img {
+  display: block; 
+  width: 100%; 
+  height: auto; 
+}
