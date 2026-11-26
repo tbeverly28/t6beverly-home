@@ -2,7 +2,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share/main3.png">
+	<meta property="og:image" content="//peprojects.dev/t6beverly/assets/images/meta-share.png">
 	
 	<!-- styles -->
 	<link rel="stylesheet" href="/t6beverly/styles/styles.css">
