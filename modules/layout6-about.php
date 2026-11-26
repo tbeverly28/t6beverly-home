@@ -21,6 +21,6 @@
 	<a href="https://wesandersonfan.substack.com/" class="special link" target="_blank">My Substack</a>
 
 	<picture class="img-container portrait-img">
-		<img src="../assets/images/coolguy.jpg" alt="person smiling">
+		<img src="../assets/images/coolguy.JPG" alt="person smiling">
 	</picture>
 </section>

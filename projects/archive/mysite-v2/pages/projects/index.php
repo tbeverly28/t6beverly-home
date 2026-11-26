@@ -17,7 +17,7 @@
 					<div class="stdlist-wrapper">
 						<ul class="stdlist stylized">
 							<li>
-								<a href="favorites" target="_blank">
+								<a href="/t6beverly/projects/archive/favorites/favorite-thing-v3.html" target="_blank">
 									<h2 class="attention-voice">Favorite Things</h2>
 									<picture class="img-container">
 										<img src="../../assets/images/meta-share/main2.png" alt="">
@@ -25,7 +25,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="horror-adventure" target="_blank">
+								<a href="/t6beverly/projects/horror-adventure" target="_blank">
 									<h2 class="attention-voice">Horror Adventure</h2>
 									<picture class="img-container">
 										<img src="../../assets/images/meta-share/horror.png" alt="">
@@ -33,7 +33,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="small-sprint/busy-b-bookkeeping" target="_blank">
+								<a href="/t6beverly/projects/small-sprint/busy-b-bookkeeping" target="_blank">
 									<h2 class="attention-voice">Small Business Sprint: Busy B's Bookkeeping</h2>
 									<picture class="img-container">
 										<img src="../../assets/images/meta-share/busyb.png" alt="">
@@ -41,7 +41,7 @@
 								</a>	
 							</li>
 							<li>
-								<a href="research-destroy" target="_blank">
+								<a href="/t6beverly/projects/archive/research-destroy" target="_blank">
 									<h2 class="attention-voice">Research & Destroy 100%</h2>
 									<picture class="img-container">
 										<img src="../../assets/images/meta-share/randd.png" alt="">
