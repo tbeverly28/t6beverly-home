@@ -17,5 +17,4 @@
 			</li>
 		</ul>
 	</inner-column>
-	
 </section>

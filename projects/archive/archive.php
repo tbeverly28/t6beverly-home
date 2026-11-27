@@ -1,8 +1,8 @@
 <section class="page-section archive">
 	<inner-column class="medium">
 		<h2 class="loud-voice">Archive</h1>
+			
 		<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time -->
-
 		<ol>
 			<li>
 				<a href="archive/mysite-v2" class="special block" target="_blank">

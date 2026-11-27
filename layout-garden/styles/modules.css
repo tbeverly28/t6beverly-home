@@ -1,4 +1,4 @@
-.layouts-list .layout-1 {
+.layout-garden ul .layout-1 {
 	padding-block: var(--gutter);
 
 	inner-column {
@@ -46,7 +46,7 @@
 	}
 }
 
-.layouts-list .layout-2 {
+.layout-garden ul .layout-2 {
 	inner-column {
 		display: flex;
 		flex-direction: column;
@@ -81,7 +81,7 @@
 	}
 }
 
-.layouts-list .layout-3 {
+.layout-garden ul .layout-3 {
 	display: grid;
 
 	inner-column {
@@ -124,7 +124,7 @@
 	}
 }
 
-.layouts-list .layout-4 {
+.layout-garden ul .layout-4 {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -171,7 +171,7 @@
 }
 
 /* preferably the image should extend outside the subgrid to the outer grid */
-.layouts-list .layout-5 {
+.layout-garden ul .layout-5 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-top: var(--small-gutter);
@@ -374,7 +374,7 @@
 	}
 }
 
-.layouts-list .layout-6 {
+.layout-garden ul .layout-6 {
 	display: grid;
 	gap: var(--large-gutter);
 	padding: var(--large-gutter) var(--gutter);
@@ -460,7 +460,7 @@
 	}
 }
 
-.layouts-list .layout-7 {
+.layout-garden ul .layout-7 {
 	display: grid;
 	justify-items: end;
 	gap: var(--large-gutter);
@@ -588,7 +588,7 @@
 	}
 }
 
-.layouts-list .layout-8 {
+.layout-garden ul .layout-8 {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr auto;
@@ -736,7 +736,7 @@
 	}
 }
 
-.layouts-list .layout-9 {
+.layout-garden ul .layout-9 {
 	inner-column {
 		display: flex;
 		flex-direction: column;
@@ -782,7 +782,7 @@
 	}
 }
 
-.layouts-list .layout-10 {
+.layout-garden ul .layout-10 {
 	background-color: var(--accent-tertiary);
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
@@ -846,7 +846,7 @@
 	}
 }
 
-.layouts-list .layout-11 {
+.layout-garden ul .layout-11 {
 	padding: var(--gutter);
 	inner-column {
 		background-color: var(--fill-secondary);

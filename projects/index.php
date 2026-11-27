@@ -5,12 +5,16 @@
 		<meta name="description" content="Tahir's current projects and learning archive">
 
 		<?php include('../site-head.php')?>
-		
-		<main class="page-content">
-			<section class="page-section projects">
-				<inner-column class="medium">
-					<h1 class="title">Projects</h1>
 
+		<section class="page-header">
+			<inner-column class="medium">
+				<h1 class="title">Projects</h1>
+			</inner-column>
+		</section>
+		
+		<main class="page-content projects">
+			<section class="page-section projects-list">
+				<inner-column class="medium">
 					<ul class="infinite-grid">
 						<!-- add jacksonassociates -->
 						<!-- Busy B's Bookkeeping -->

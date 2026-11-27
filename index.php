@@ -15,17 +15,17 @@
 		<!-- DM Sans, Mono -->
 		<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<main class="page-content business-card">
-			<section class="info">
-				<h1 class="title">Tahir Beverly</h1>
+	<body class="business-card">
+		<main class="page-content">
+			<h1 class="title">Tahir Beverly</h1>
 
-				<p class="calm-voice body-paragraph">
-					I recently graduated with a bachelor’s in Computer Science from the University of Maryland, College Park during the "great" boom of artificial intelligence. <a class="special inline" href="https://youtu.be/QGmhLtsK2ZQ?si=lAwUV105YtpWiPt2" target="_blank">They took our jobs!</a> Like every 20-something year old I'm still trying to figure everything out and attempting to understand what this great big beautiful earth has to offer for little old me and what I have to give back to it. All jokes aside, there's one thing I know for sure: People don't buy what you do, they buy why you do it — Simon Sinek
+			<section class="body-text">
+				<p class="calm-voice">
+					I recently graduated with a bachelor’s in Computer Science from the University of Maryland, College Park during the "great" boom of artificial intelligence. <a class="special inline" href="https://youtu.be/QGmhLtsK2ZQ?si=lAwUV105YtpWiPt2" target="_blank">They took our jobs!</a> Like every 20-something year old, I'm still trying to figure out my place in the world. All jokes aside, there's one thing I know for sure: "People don't buy what you do, they buy why you do it" — Simon Sinek
 				</p>
 
-				<p class="calm-voice body-paragraph">
-					Why am I doing this in the first place? The money? Well... yes because I will eventually have to "put food on the table", as us non 1-percenters say, but I chose this specific field for a reason. Not because I thought I could potentially be sitting at a desk making 6+ figures doing nothing all day, but because I want to live and breathe design, tech, nature, art and culture. Whatever that means and as corny as it sounds, I want to make design a part of my everyday life. I think my <span class="special">raison d'etre</span> is to bring people closer to technology enough so that it doesn't feel intrusive, disruptive, or disgusting, but exciting and humane (I'm looking at you AI "food" menus). 
+				<p class="calm-voice">
+					Why am I doing this in the first place? The money? Well... yes because I will eventually have to "put food on the table", as us non 1-percenters say, but I chose this specific field for a reason. Not because I thought I could potentially be sitting at a desk making 6+ figures doing nothing all day, but because I want to live and breathe design, tech, nature, art and culture. Whatever that means and as corny as it sounds, I want to make design a part of my everyday life. My <span class="special">raison d'etre</span> is to make interacting with technology simple, memorable, and exciting without the intrusive, disruptive, and rather "disgusting" side-effects (I'm looking at you AI "food" menus). Designers are the chefs that feed our eyes, and <span class="special">good design</span> is the special seasoning we need to enjoy life.
 				</p>
 			</section>
 			

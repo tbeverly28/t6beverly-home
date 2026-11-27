@@ -6,11 +6,15 @@
 
 		<?php include('../site-head.php')?>
 		
-		<main class="page-content">
-			<section class="page-section about">
-				<inner-column class="small">
-					<h1 class="title">Who is Tahir?</h1>
+		<section class="page-header">
+			<inner-column class="small">
+				<h1 class="title">Who is Tahir?</h1>
+			</inner-column>
+		</section>
 
+		<main class="page-content about">
+			<section class="page-section">
+				<inner-column class="small">
 					<?php include('../modules/layout6-about.php')?>
 				</inner-column>
 			</section>
