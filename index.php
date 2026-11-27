@@ -25,7 +25,7 @@
 				</p>
 
 				<p class="calm-voice">
-					Why am I doing this in the first place? The money? Well... yes because I will eventually have to "put food on the table", as us non 1-percenters say, but I chose this specific field for a reason. Not because I thought I could potentially be sitting at a desk making 6+ figures doing nothing all day, but because I want to live and breathe design, tech, nature, art and culture. Whatever that means and as corny as it sounds, I want to make design a part of my everyday life. My <span class="special">raison d'etre</span> is to make interacting with technology simple, memorable, and exciting without the intrusive, disruptive, and rather "disgusting" side-effects (I'm looking at you AI "food" menus). Designers are the chefs that feed our eyes, and <span class="special">good design</span> is the special seasoning we need to enjoy life.
+					Why am I doing this in the first place? The money? Well... yes because I will eventually have to "put food on the table", as us non 1-percenters say, but I chose this specific field for a reason. Not because I thought I could potentially be sitting at a desk making 6+ figures doing nothing all day, but because I want to live and breathe design, tech, nature, art and culture. Whatever that means and as corny as it sounds, I want to make design a part of my everyday life. My <span class="special">raison d'etre</span> is to make interacting with technology simple, memorable, and exciting without the intrusive, disruptive, and rather "disgusting" side-effects (I'm looking at you AI "food" menus). Designers are the chefs who feed our eyes, and <span class="special">good design</span> is the special seasoning we need to enjoy life.
 				</p>
 			</section>
 			

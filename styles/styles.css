@@ -355,11 +355,17 @@ ol li::marker {
 	color: var(--accent-primary);
 }
 
-p.calm-voice {
-	max-width: 75ch;
-	text-wrap: pretty;
-	padding-bottom: var(--small-gutter);
+.body-text {
+	display: flex;
+	flex-direction: column;
+	gap: var(--small-gutter);
+	
+	p.calm-voice {
+		max-width: 75ch;
+		text-wrap: pretty;
+	}
 }
+
 
 /* slight resets */
 a {

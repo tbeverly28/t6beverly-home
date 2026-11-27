@@ -8,10 +8,6 @@ body {
 	background-color: var(--fill-secondary);
 }
 
-p.calm-voice {
-	padding: 0;
-}
-
 .layout-garden ul {
 	--accent-primary: var(--shaleBrown);
 	--accent-secondary: var(--portabelloBrown);
